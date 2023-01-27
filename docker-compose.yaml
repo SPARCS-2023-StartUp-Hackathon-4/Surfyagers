@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    volumes:
+      - ./db/data/:/var/lib/mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      TZ: Asia/Seoul
+    ports:
+      - 33062:3306
