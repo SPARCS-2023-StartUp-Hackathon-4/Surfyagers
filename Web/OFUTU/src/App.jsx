@@ -1,5 +1,7 @@
+import TagSuggest from "./TagSuggest/TagSuggest";
+
 function App() {
-  return <div>test</div>;
+  return <TagSuggest />;
 }
 
 export default App;
