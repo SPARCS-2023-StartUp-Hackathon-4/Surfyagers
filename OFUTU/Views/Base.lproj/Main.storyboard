@@ -104,7 +104,7 @@
         <!--마이페이지-->
         <scene sceneID="jTA-zk-WDh">
             <objects>
-                <viewController id="np0-ZG-sKC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="np0-ZG-sKC" customClass="MyPageVC" customModule="OFUTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W1k-k0-FiI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,10 +131,10 @@
             </objects>
             <point key="canvasLocation" x="1229" y="673"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="oaM-QS-pRN">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6jK-eE-tU1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6jK-eE-tU1" customClass="MainTabBarController" customModule="OFUTU" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8cf-pR-15D">
                         <autoresizingMask key="autoresizingMask"/>

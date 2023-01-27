@@ -35,6 +35,7 @@
 		F0E663E929843C98001F564D /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663E829843C98001F564D /* MainCategory.swift */; };
 		F0E663EB29843D19001F564D /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EA29843D19001F564D /* SubCategory.swift */; };
 		F0E663ED29843D82001F564D /* EditorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EC29843D82001F564D /* EditorMode.swift */; };
+		F0E663EF29843E6F001F564D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EE29843E6F001F564D /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		F0E663E829843C98001F564D /* MainCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		F0E663EA29843D19001F564D /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
 		F0E663EC29843D82001F564D /* EditorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMode.swift; sourceTree = "<group>"; };
+		F0E663EE29843E6F001F564D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				F0E663DA29843291001F564D /* CategoryVC.swift */,
 				F0E663DC298433B9001F564D /* LocalVC.swift */,
 				F0E663DE29843493001F564D /* MyPageVC.swift */,
+				F0E663EE29843E6F001F564D /* MainTabBarController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				F0E663E129843867001F564D /* FontManager.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
 				F0E663DF29843493001F564D /* MyPageVC.swift in Sources */,
+				F0E663EF29843E6F001F564D /* MainTabBarController.swift in Sources */,
 				F0E663E729843B4A001F564D /* User.swift in Sources */,
 				F0E663ED29843D82001F564D /* EditorMode.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
