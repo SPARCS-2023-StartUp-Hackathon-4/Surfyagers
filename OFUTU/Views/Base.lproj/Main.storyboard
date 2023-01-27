@@ -153,6 +153,36 @@
             </objects>
             <point key="canvasLocation" x="35.384615384615387" y="-27.014218009478672"/>
         </scene>
+        <!--WebVC-->
+        <scene sceneID="0xq-HJ-rd9">
+            <objects>
+                <viewController storyboardIdentifier="WebVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1wx-Bg-uky" customClass="WebVC" customModule="OFUTU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="flQ-VO-dus">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiI-W9-vEx">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="810"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XY4-OW-4Ce"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="XY4-OW-4Ce" firstAttribute="bottom" secondItem="EiI-W9-vEx" secondAttribute="bottom" id="DyN-5D-EpE"/>
+                            <constraint firstItem="EiI-W9-vEx" firstAttribute="leading" secondItem="XY4-OW-4Ce" secondAttribute="leading" id="mya-ld-Bny"/>
+                            <constraint firstItem="XY4-OW-4Ce" firstAttribute="trailing" secondItem="EiI-W9-vEx" secondAttribute="trailing" id="vlX-un-PsB"/>
+                            <constraint firstItem="EiI-W9-vEx" firstAttribute="top" secondItem="flQ-VO-dus" secondAttribute="top" id="zJH-Wu-1CB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="EiI-W9-vEx" id="C8d-cJ-iHa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taa-mn-SwN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3502" y="682"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CategoryIconImage" width="18" height="19.333333969116211"/>
