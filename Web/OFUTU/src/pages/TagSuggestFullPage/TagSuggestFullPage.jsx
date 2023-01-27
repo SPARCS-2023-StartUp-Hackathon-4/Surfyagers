@@ -7,6 +7,7 @@ const TagSuggestFullPage = () => {
   const [buttonActive, setButtonActive] = useState(false);
 
   const activeSuggestButton = () => {
+    if (valueTagText === "") return;
     location.href = "./suggestDone";
   };
 
@@ -19,7 +20,7 @@ const TagSuggestFullPage = () => {
   }, [valueTagText]);
 
   return (
-    <div className="h-screen w-full flex flex-col justify-between">
+    <div className="h-screen w-screen flex flex-col justify-between">
       <div>
         <div>
           <button
