@@ -1,5 +1,17 @@
 PODS:
   - Alamofire (5.6.4)
+  - KakaoSDKAuth (2.12.0):
+    - KakaoSDKCommon (= 2.12.0)
+  - KakaoSDKCommon (2.12.0):
+    - KakaoSDKCommon/Common (= 2.12.0)
+    - KakaoSDKCommon/Network (= 2.12.0)
+  - KakaoSDKCommon/Common (2.12.0)
+  - KakaoSDKCommon/Network (2.12.0):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.12.0)
+  - KakaoSDKUser (2.12.0):
+    - KakaoSDKAuth (= 2.12.0)
+  - lottie-ios (4.0.0)
   - PagingKit (1.18.1)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
@@ -19,6 +31,9 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - KakaoSDKAuth
+  - KakaoSDKUser
+  - lottie-ios
   - PagingKit
   - RxCocoa
   - RxGesture
@@ -31,6 +46,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
+    - lottie-ios
     - PagingKit
     - RxCocoa
     - RxGesture
@@ -43,6 +62,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  KakaoSDKAuth: 46e9979113a2f1b6ce7b347465841c78f6e43b03
+  KakaoSDKCommon: 7a49d3c686a7b38b4736ab4b8e0f776feed15bcd
+  KakaoSDKUser: addc31c3b9b5be71b231021467dbaef3086efbb2
+  lottie-ios: 0b5919ae7673fd7a1c36122b7cb6a9050e9c9f58
   PagingKit: 0e7ec4e3791ab55887e129b27f7486a91b761129
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
@@ -53,6 +76,6 @@ SPEC CHECKSUMS:
   SwiftDate: bbc26e26fc8c0c33fbee8c140c5e8a68293a148a
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 69a6ebb2d607615707e75dd707f2fbd9fe8453e7
+PODFILE CHECKSUM: 9875a00c1bfbc3d154c1113ad0fc33507b96366c
 
 COCOAPODS: 1.11.3

@@ -15,4 +15,7 @@ target 'OFUTU' do
   pod 'RxKeyboard'
   pod 'PagingKit'
   pod 'Alamofire'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
+  pod 'lottie-ios'
 end
