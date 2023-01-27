@@ -27,6 +27,7 @@
 		F0E663D929842940001F564D /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663D829842940001F564D /* ImageManager.swift */; };
 		F0E663DB29843291001F564D /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663DA29843291001F564D /* CategoryVC.swift */; };
 		F0E663DD298433B9001F564D /* LocalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663DC298433B9001F564D /* LocalVC.swift */; };
+		F0E663DF29843493001F564D /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663DE29843493001F564D /* MyPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F0E663D829842940001F564D /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		F0E663DA29843291001F564D /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		F0E663DC298433B9001F564D /* LocalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVC.swift; sourceTree = "<group>"; };
+		F0E663DE29843493001F564D /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				F00A9CA02983F01D005EA650 /* MainVC.swift */,
 				F0E663DA29843291001F564D /* CategoryVC.swift */,
 				F0E663DC298433B9001F564D /* LocalVC.swift */,
+				F0E663DE29843493001F564D /* MyPageVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				F00A9CA12983F01D005EA650 /* MainVC.swift in Sources */,
 				F0E663D929842940001F564D /* ImageManager.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
+				F0E663DF29843493001F564D /* MyPageVC.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 				F0E663D5298424D3001F564D /* ColorManager.swift in Sources */,
 			);
