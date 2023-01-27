@@ -38,6 +38,8 @@
 		F0E663EF29843E6F001F564D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EE29843E6F001F564D /* MainTabBarController.swift */; };
 		F0E663F129843F04001F564D /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F029843F04001F564D /* HomeManager.swift */; };
 		F0E663F329843F88001F564D /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F229843F88001F564D /* WebVC.swift */; };
+		F0E663F62984473E001F564D /* SubCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F42984473E001F564D /* SubCategoryCell.swift */; };
+		F0E663F72984473E001F564D /* SubCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E663F52984473E001F564D /* SubCategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		F0E663EE29843E6F001F564D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0E663F029843F04001F564D /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
 		F0E663F229843F88001F564D /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		F0E663F42984473E001F564D /* SubCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryCell.swift; sourceTree = "<group>"; };
+		F0E663F52984473E001F564D /* SubCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,8 @@
 		F0E663BC29841F64001F564D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F0E663F42984473E001F564D /* SubCategoryCell.swift */,
+				F0E663F52984473E001F564D /* SubCategoryCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			files = (
 				F00A9CA92983F01E005EA650 /* LaunchScreen.storyboard in Resources */,
 				F00A9CA62983F01E005EA650 /* Assets.xcassets in Resources */,
+				F0E663F72984473E001F564D /* SubCategoryCell.xib in Resources */,
 				F0E663D1298421AA001F564D /* Pretendard-ExtraBold.otf in Resources */,
 				F0E663CE298421AA001F564D /* Pretendard-Bold.otf in Resources */,
 				F0E663CB298421AA001F564D /* Pretendard-Black.otf in Resources */,
@@ -351,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E663F62984473E001F564D /* SubCategoryCell.swift in Sources */,
 				F0E663EB29843D19001F564D /* SubCategory.swift in Sources */,
 				F0E663DD298433B9001F564D /* LocalVC.swift in Sources */,
 				F0E663DB29843291001F564D /* CategoryVC.swift in Sources */,
