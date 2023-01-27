@@ -82,13 +82,77 @@
 			children = (
 				F00A9C9C2983F01D005EA650 /* AppDelegate.swift */,
 				F00A9C9E2983F01D005EA650 /* SceneDelegate.swift */,
-				F00A9CA02983F01D005EA650 /* MainVC.swift */,
-				F00A9CA22983F01D005EA650 /* Main.storyboard */,
+				F0E663C029841F7E001F564D /* Models */,
+				F0E663BF29841F7C001F564D /* ViewModels */,
+				F0E663BE29841F75001F564D /* Views */,
+				F0E663BD29841F66001F564D /* ViewControllers */,
+				F0E663BC29841F64001F564D /* Cells */,
+				F0E663BB29841F62001F564D /* Managers */,
+				F0E663BA29841F60001F564D /* Fonts */,
+				F0E663B929841F5C001F564D /* Enums */,
 				F00A9CA52983F01E005EA650 /* Assets.xcassets */,
-				F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */,
 				F00A9CAA2983F01E005EA650 /* Info.plist */,
 			);
 			path = OFUTU;
+			sourceTree = "<group>";
+		};
+		F0E663B929841F5C001F564D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		F0E663BA29841F60001F564D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F0E663BB29841F62001F564D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F0E663BC29841F64001F564D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F0E663BD29841F66001F564D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F00A9CA02983F01D005EA650 /* MainVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0E663BE29841F75001F564D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F00A9CA22983F01D005EA650 /* Main.storyboard */,
+				F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0E663BF29841F7C001F564D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F0E663C029841F7E001F564D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
