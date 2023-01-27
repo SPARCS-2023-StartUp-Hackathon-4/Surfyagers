@@ -48,6 +48,7 @@ class FirstIntroVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        action()
     }
     
     private func initUI() {
@@ -56,6 +57,36 @@ class FirstIntroVC: UIViewController {
         
         // UIButton
         configureButton()
+    }
+    
+    private func action() {
+        nameTextField.rx.controlEvent([.editingDidBegin])
+            .asObservable()
+            .subscribe(onNext: { _ in
+                UIView.animate(withDuration: 0.2, delay: 0.1) {
+                    self.lineView.backgroundColor = .black
+                    self.stackViewConstraint.constant = self.STACK_VIEW_TOP_CONSTRAINT
+                    self.view.layoutIfNeeded()
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        nextButton.rx.tap
+            .subscribe(onNext: { _ in
+                // TODO: SecondIntro 화면으로 이동하는 코드 추가 하기
+            })
+            .disposed(by: disposeBag)
+        
+        RxKeyboard.instance.visibleHeight
+            .drive(onNext: { [unowned self] keyboardHeight in
+                let height = keyboardHeight > 0 ? -keyboardHeight + view.safeAreaInsets.bottom - 10 : 0
+                
+                self.nextButton.snp.updateConstraints {
+                    $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(height)
+                }
+                view.layoutIfNeeded()
+            })
+            .disposed(by: disposeBag)
     }
     
     private func configureTextField() {
