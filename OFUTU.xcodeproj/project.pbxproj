@@ -34,6 +34,7 @@
 		F0E663E729843B4A001F564D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663E629843B4A001F564D /* User.swift */; };
 		F0E663E929843C98001F564D /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663E829843C98001F564D /* MainCategory.swift */; };
 		F0E663EB29843D19001F564D /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EA29843D19001F564D /* SubCategory.swift */; };
+		F0E663ED29843D82001F564D /* EditorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EC29843D82001F564D /* EditorMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		F0E663E629843B4A001F564D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F0E663E829843C98001F564D /* MainCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		F0E663EA29843D19001F564D /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		F0E663EC29843D82001F564D /* EditorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				F0E663E829843C98001F564D /* MainCategory.swift */,
 				F0E663EA29843D19001F564D /* SubCategory.swift */,
+				F0E663EC29843D82001F564D /* EditorMode.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
 				F0E663DF29843493001F564D /* MyPageVC.swift in Sources */,
 				F0E663E729843B4A001F564D /* User.swift in Sources */,
+				F0E663ED29843D82001F564D /* EditorMode.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 				F0E663D5298424D3001F564D /* ColorManager.swift in Sources */,
 				F0E663E32984391E001F564D /* WebViewManager.swift in Sources */,
