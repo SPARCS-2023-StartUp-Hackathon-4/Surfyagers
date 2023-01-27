@@ -47,6 +47,9 @@ class MainVC: UIViewController {
         
         // UIButton
         configureButton()
+        
+        // UICollectionView
+        configureCollectionView()
     }
     
     private func configurePagingViews() {
@@ -61,7 +64,51 @@ class MainVC: UIViewController {
     private func configureButton() {
         searchButton.setImage(BUTTON_IMAGE, for: .normal)
     }
+    
+    private func configureCollectionView() {
+        subCategoryCollectionView.dataSource = self
+        subCategoryCollectionView.delegate = self
+        subCategoryCollectionView.register(UINib(nibName: "SubCategoryCell", bundle: nil), forCellWithReuseIdentifier: "SubCategoryCell")
+    }
 }
+
+extension MainVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return subCategoryList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubCategoryCell", for: indexPath) as! SubCategoryCell
+        
+        cell.setData(title: subCategoryList[indexPath.row].rawValue, selectedTitle: selectedSubCategory)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0,
+                            left: section == 0 ? 12 : 0,
+                            bottom: 0,
+                            right: section == 0 ? 12 : 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: subCategoryList[indexPath.item].rawValue.size(withAttributes: [NSAttributedString.Key.font : FontManager.shared.getPretendardMedium(fontSize: 14)]).width + 20, height: 40)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedSubCategory = subCategoryList[indexPath.row]
+        
+        dataSource[0].1 = HomeManager.shared.getViewController(selectedMainCategory: .main, selectedSubCategory: selectedSubCategory)
+        
+        dataSource[1].1 = HomeManager.shared.getViewController(selectedMainCategory: .community, selectedSubCategory: selectedSubCategory)
+        
+        menuViewController.reloadData()
+        contentViewController.reloadData()
+        subCategoryCollectionView.reloadData()
+    }
+}
+
 
 extension MainVC: PagingMenuViewControllerDataSource, PagingMenuViewControllerDelegate {
     func menuViewController(viewController: PagingMenuViewController, cellForItemAt index: Int) -> PagingMenuViewCell {
