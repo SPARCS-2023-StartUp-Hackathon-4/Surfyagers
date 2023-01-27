@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="462" y="673"/>
         </scene>
-        <!--Item-->
+        <!--마이페이지-->
         <scene sceneID="jTA-zk-WDh">
             <objects>
                 <viewController id="np0-ZG-sKC" sceneMemberID="viewController">
@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="R2V-Jl-bDP"/>
                         <color key="backgroundColor" name="White"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="d2r-kM-fi0"/>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="MyPageIconImage" id="d2r-kM-fi0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgl-aV-zik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +102,7 @@
         <image name="CategoryIconImage" width="18" height="19.333333969116211"/>
         <image name="HomeIconImage" width="18.666666030883789" height="19"/>
         <image name="LocalLogoImage" width="25" height="25"/>
+        <image name="MyPageIconImage" width="18" height="19.333333969116211"/>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
