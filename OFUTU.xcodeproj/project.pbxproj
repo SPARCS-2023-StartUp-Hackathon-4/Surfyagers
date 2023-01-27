@@ -10,7 +10,7 @@
 		30EC3275F6E275679A2B223F /* Pods_OFUTU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D72E99E21009CE0965EFC8 /* Pods_OFUTU.framework */; };
 		F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A9C9C2983F01D005EA650 /* AppDelegate.swift */; };
 		F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A9C9E2983F01D005EA650 /* SceneDelegate.swift */; };
-		F00A9CA12983F01D005EA650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A9CA02983F01D005EA650 /* ViewController.swift */; };
+		F00A9CA12983F01D005EA650 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00A9CA02983F01D005EA650 /* MainVC.swift */; };
 		F00A9CA42983F01D005EA650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA22983F01D005EA650 /* Main.storyboard */; };
 		F00A9CA62983F01E005EA650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA52983F01E005EA650 /* Assets.xcassets */; };
 		F00A9CA92983F01E005EA650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		F00A9C992983F01D005EA650 /* OFUTU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OFUTU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F00A9C9C2983F01D005EA650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F00A9C9E2983F01D005EA650 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F00A9CA02983F01D005EA650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F00A9CA02983F01D005EA650 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F00A9CA32983F01D005EA650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F00A9CA52983F01E005EA650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00A9CA82983F01E005EA650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,6 @@
 				0E50D17EC84199ACEB2493AC /* Pods-OFUTU.debug.xcconfig */,
 				3F24C7D41C2EFBB8C402478E /* Pods-OFUTU.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,7 +82,7 @@
 			children = (
 				F00A9C9C2983F01D005EA650 /* AppDelegate.swift */,
 				F00A9C9E2983F01D005EA650 /* SceneDelegate.swift */,
-				F00A9CA02983F01D005EA650 /* ViewController.swift */,
+				F00A9CA02983F01D005EA650 /* MainVC.swift */,
 				F00A9CA22983F01D005EA650 /* Main.storyboard */,
 				F00A9CA52983F01E005EA650 /* Assets.xcassets */,
 				F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */,
@@ -207,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F00A9CA12983F01D005EA650 /* ViewController.swift in Sources */,
+				F00A9CA12983F01D005EA650 /* MainVC.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 			);
