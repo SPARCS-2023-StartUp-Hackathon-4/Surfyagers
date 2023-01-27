@@ -24,6 +24,7 @@
 		F0E663D2298421AA001F564D /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C9298421A9001F564D /* Pretendard-Thin.otf */; };
 		F0E663D3298421AA001F564D /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663CA298421A9001F564D /* Pretendard-ExtraLight.otf */; };
 		F0E663D5298424D3001F564D /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663D4298424D3001F564D /* ColorManager.swift */; };
+		F0E663D929842940001F564D /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663D829842940001F564D /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F0E663C9298421A9001F564D /* Pretendard-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
 		F0E663CA298421A9001F564D /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		F0E663D4298424D3001F564D /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		F0E663D829842940001F564D /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				F0E663D4298424D3001F564D /* ColorManager.swift */,
+				F0E663D829842940001F564D /* ImageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F00A9CA12983F01D005EA650 /* MainVC.swift in Sources */,
+				F0E663D929842940001F564D /* ImageManager.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 				F0E663D5298424D3001F564D /* ColorManager.swift in Sources */,
