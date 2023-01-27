@@ -27,6 +27,22 @@
             </objects>
             <point key="canvasLocation" x="-1506" y="673"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Tuu-82-Qmc">
+            <objects>
+                <viewController storyboardIdentifier="CategoryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QxU-SR-dd9" customClass="CategoryVC" customModule="OFUTU" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bVC-9h-5Bu">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x2e-Eg-BPM"/>
+                        <color key="backgroundColor" name="White"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="m4q-Uy-zH6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEp-Jc-Z2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="673"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oaM-QS-pRN">
             <objects>
@@ -40,6 +56,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1Ac-LH-Lp9"/>
+                        <segue destination="QxU-SR-dd9" kind="relationship" relationship="viewControllers" id="17o-Cc-8vX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vm-Kn-TgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
