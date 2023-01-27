@@ -89,6 +89,22 @@ class FirstIntroVC: UIViewController {
             .disposed(by: disposeBag)
     }
     
+    private func bind() {
+        // Input
+        nameTextField.rx.text.orEmpty
+            .bind(to: viewModel.input.nickname)
+            .disposed(by: disposeBag)
+        
+        // Output
+        viewModel.output.nextButtonValidation
+            .subscribe(onNext: { check in
+                self.validateLabel.text = check ? self.ACTIVE_HINT : self.INACTIVE_HINT
+                self.nextButton.isEnabled = check
+                self.nextButton.backgroundColor = self.nextButton.isEnabled ? .black : ColorManager.shared.getLightSilver()
+            })
+            .disposed(by: disposeBag)
+    }
+    
     private func configureTextField() {
         nameTextField.font = FontManager.shared.getPretendardMedium(fontSize: TEXT_FIELD_FONT_SIZE)
     }
