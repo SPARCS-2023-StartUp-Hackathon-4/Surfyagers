@@ -26,3 +26,4 @@ INSERT INTO Image VALUES (24, "/ofutu/zerowaste_6.png");
 INSERT INTO Image VALUES (25, "/ofutu/zerowaste_like_1.png");
 INSERT INTO Image VALUES (26, "/ofutu/zerowaste_like_2.png");
 INSERT INTO Image VALUES (27, "/ofutu/zerowaste_like_3.png");
+INSERT INTO Image VALUES (28, "/ofutu/productDetail.png");

@@ -41,6 +41,8 @@ app.get("/productList/:tag", async (req, res) => {
 
 app.get("/productDetail/:id", async (req, res) => {
   const id = req.params.id;
+  const item = await pool(`SELECT * FROM Product WHERE Product_id = ${id}`);
+  res.send(item[0]);
 });
 
 app.listen(port, () => {
