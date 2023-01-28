@@ -65,11 +65,15 @@ class ThirdIntroVC: UIViewController {
     private func action() {
         startButton.rx.tap
             .subscribe(onNext: {
-                // MARK: - 서버 통신 코드 추가
+                // MARK: - (User 객체 생성 및 데이터 저장)
                 let mainVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
                 
                 mainVC.modalTransitionStyle = .crossDissolve
                 mainVC.modalPresentationStyle = .overFullScreen
+                
+                let userObj = User(name: self.viewModel.name, tagList: self.viewModel.tagList, goal: self.goalTextField.text!, beginDay: Date())
+                
+                UserDefaultsManager.shared.signUp(user: userObj)
                 
                 self.present(mainVC, animated: true)
             })

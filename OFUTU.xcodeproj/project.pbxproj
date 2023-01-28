@@ -17,6 +17,7 @@
 		F0389F872984DC3300072E2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0389F862984DC3300072E2C /* LoginVC.swift */; };
 		F0389F8B2984E81300072E2C /* OFUTU1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F0389F8A2984E81300072E2C /* OFUTU1.mp4 */; };
 		F0389F8D2984F73C00072E2C /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0389F8C2984F73C00072E2C /* UserDefaultsManager.swift */; };
+		F0389F8F29850B2300072E2C /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0389F8E29850B2300072E2C /* TimeManager.swift */; };
 		F0576A71298460E6005133C9 /* SecondIntroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A70298460E6005133C9 /* SecondIntroVM.swift */; };
 		F0576A7329846187005133C9 /* SecondIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A7229846187005133C9 /* SecondIntroVC.swift */; };
 		F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A74298462DC005133C9 /* ThirdIntroVC.swift */; };
@@ -66,6 +67,7 @@
 		F0389F862984DC3300072E2C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F0389F8A2984E81300072E2C /* OFUTU1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OFUTU1.mp4; sourceTree = "<group>"; };
 		F0389F8C2984F73C00072E2C /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		F0389F8E29850B2300072E2C /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 		F0576A70298460E6005133C9 /* SecondIntroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVM.swift; sourceTree = "<group>"; };
 		F0576A7229846187005133C9 /* SecondIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVC.swift; sourceTree = "<group>"; };
 		F0576A74298462DC005133C9 /* ThirdIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVC.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				F0E663E429843B0B001F564D /* NetworkManager.swift */,
 				F0E663F029843F04001F564D /* HomeManager.swift */,
 				F0389F8C2984F73C00072E2C /* UserDefaultsManager.swift */,
+				F0389F8E29850B2300072E2C /* TimeManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				F0E663F62984473E001F564D /* SubCategoryCell.swift in Sources */,
 				F0E663EB29843D19001F564D /* SubCategory.swift in Sources */,
+				F0389F8F29850B2300072E2C /* TimeManager.swift in Sources */,
 				F0E663DD298433B9001F564D /* LocalVC.swift in Sources */,
 				F0E663DB29843291001F564D /* CategoryVC.swift in Sources */,
 				F0E663F129843F04001F564D /* HomeManager.swift in Sources */,
