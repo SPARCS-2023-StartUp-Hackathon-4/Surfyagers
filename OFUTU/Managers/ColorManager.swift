@@ -39,5 +39,13 @@ class ColorManager {
     func getOldSilver() -> UIColor {
         return UIColor(named: "OldSilver")!
     }
+    
+    func getDavyGray() -> UIColor {
+        return UIColor(named: "DavyGray")!
+    }
+    
+    func getSilverChalice() -> UIColor {
+        return UIColor(named: "SilverChalice")!
+    }
 }
 
