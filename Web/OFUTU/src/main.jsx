@@ -4,11 +4,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import TagSuggestFullPage from "./pages/TagSuggestFullPage/TagSuggestFullPage";
 import "./index.css";
 import SuggestDoneFullPage from "./pages/SuggestDoneFullPage/SuggestDoneFullPage";
+import HomePage from "./pages/HomePage/HomePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div>hello world</div>,
+  },
+  {
+    path: "home",
+    element: <HomePage />,
   },
   {
     path: "/tagSuggest",
