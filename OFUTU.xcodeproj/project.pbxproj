@@ -14,6 +14,8 @@
 		F00A9CA42983F01D005EA650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA22983F01D005EA650 /* Main.storyboard */; };
 		F00A9CA62983F01E005EA650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA52983F01E005EA650 /* Assets.xcassets */; };
 		F00A9CA92983F01E005EA650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */; };
+		F0389F872984DC3300072E2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0389F862984DC3300072E2C /* LoginVC.swift */; };
+		F0389F8B2984E81300072E2C /* OFUTU1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F0389F8A2984E81300072E2C /* OFUTU1.mp4 */; };
 		F0576A71298460E6005133C9 /* SecondIntroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A70298460E6005133C9 /* SecondIntroVM.swift */; };
 		F0576A7329846187005133C9 /* SecondIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A7229846187005133C9 /* SecondIntroVC.swift */; };
 		F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A74298462DC005133C9 /* ThirdIntroVC.swift */; };
@@ -60,6 +62,8 @@
 		F00A9CA52983F01E005EA650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00A9CA82983F01E005EA650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F00A9CAA2983F01E005EA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0389F862984DC3300072E2C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F0389F8A2984E81300072E2C /* OFUTU1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = OFUTU1.mp4; sourceTree = "<group>"; };
 		F0576A70298460E6005133C9 /* SecondIntroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVM.swift; sourceTree = "<group>"; };
 		F0576A7229846187005133C9 /* SecondIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVC.swift; sourceTree = "<group>"; };
 		F0576A74298462DC005133C9 /* ThirdIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVC.swift; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 				F0E663B929841F5C001F564D /* Enums */,
 				F00A9CA52983F01E005EA650 /* Assets.xcassets */,
 				F00A9CAA2983F01E005EA650 /* Info.plist */,
+				F0389F8A2984E81300072E2C /* OFUTU1.mp4 */,
 			);
 			path = OFUTU;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				F0576A7229846187005133C9 /* SecondIntroVC.swift */,
 				F0576A74298462DC005133C9 /* ThirdIntroVC.swift */,
 				F0576A782984675D005133C9 /* WebVC.swift */,
+				F0389F862984DC3300072E2C /* LoginVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				F0E663CF298421AA001F564D /* Pretendard-Regular.otf in Resources */,
 				F0E663D0298421AA001F564D /* Pretendard-SemiBold.otf in Resources */,
 				F00A9CA42983F01D005EA650 /* Main.storyboard in Resources */,
+				F0389F8B2984E81300072E2C /* OFUTU1.mp4 in Resources */,
 				F0E663D2298421AA001F564D /* Pretendard-Thin.otf in Resources */,
 				F0E663CD298421AA001F564D /* Pretendard-Medium.otf in Resources */,
 			);
@@ -400,6 +407,7 @@
 				F0E663E729843B4A001F564D /* User.swift in Sources */,
 				F0576A77298462F8005133C9 /* ThirdIntroVM.swift in Sources */,
 				F0E663ED29843D82001F564D /* EditorMode.swift in Sources */,
+				F0389F872984DC3300072E2C /* LoginVC.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 				F0E663D5298424D3001F564D /* ColorManager.swift in Sources */,
 				F0E663E32984391E001F564D /* WebViewManager.swift in Sources */,
@@ -557,6 +565,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -591,6 +600,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
