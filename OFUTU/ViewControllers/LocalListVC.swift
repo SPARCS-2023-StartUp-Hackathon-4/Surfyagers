@@ -35,6 +35,9 @@ class LocalListVC: UIViewController {
     private func initUI() {
         // UITableView
         configureTableView()
+        
+        // UIButton
+        searchButton.setImage(BUTTON_IMAGE, for: .normal)
     }
     
     private func action() {
@@ -64,6 +67,17 @@ extension LocalListVC: UITableViewDataSource, UITableViewDelegate {
         cell.selectionStyle = .none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            let detailLocalVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailLocalVC") as! DetailLocalVC
+            
+            detailLocalVC.modalTransitionStyle = .crossDissolve
+            detailLocalVC.modalPresentationStyle = .overFullScreen
+            
+            self.present(detailLocalVC, animated: true)
+        }
     }
     
     
