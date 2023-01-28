@@ -23,6 +23,12 @@
 		F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A74298462DC005133C9 /* ThirdIntroVC.swift */; };
 		F0576A77298462F8005133C9 /* ThirdIntroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A76298462F8005133C9 /* ThirdIntroVM.swift */; };
 		F0576A792984675D005133C9 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A782984675D005133C9 /* WebVC.swift */; };
+		F09241F129855598001F695B /* LocalListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09241F029855598001F695B /* LocalListVC.swift */; };
+		F09241F4298558FA001F695B /* LocalPlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09241F2298558FA001F695B /* LocalPlaceCell.swift */; };
+		F09241F5298558FA001F695B /* LocalPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09241F3298558FA001F695B /* LocalPlaceCell.xib */; };
+		F09241F729856C33001F695B /* DetailLocalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09241F629856C33001F695B /* DetailLocalVC.swift */; };
+		F09241FA2985793D001F695B /* DetailLocalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09241F82985793D001F695B /* DetailLocalCell.swift */; };
+		F09241FB2985793D001F695B /* DetailLocalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09241F92985793D001F695B /* DetailLocalCell.xib */; };
 		F0E663CB298421AA001F564D /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C2298421A9001F564D /* Pretendard-Black.otf */; };
 		F0E663CC298421AA001F564D /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C3298421A9001F564D /* Pretendard-Light.otf */; };
 		F0E663CD298421AA001F564D /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C4298421A9001F564D /* Pretendard-Medium.otf */; };
@@ -73,6 +79,12 @@
 		F0576A74298462DC005133C9 /* ThirdIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVC.swift; sourceTree = "<group>"; };
 		F0576A76298462F8005133C9 /* ThirdIntroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVM.swift; sourceTree = "<group>"; };
 		F0576A782984675D005133C9 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		F09241F029855598001F695B /* LocalListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalListVC.swift; sourceTree = "<group>"; };
+		F09241F2298558FA001F695B /* LocalPlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPlaceCell.swift; sourceTree = "<group>"; };
+		F09241F3298558FA001F695B /* LocalPlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalPlaceCell.xib; sourceTree = "<group>"; };
+		F09241F629856C33001F695B /* DetailLocalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalVC.swift; sourceTree = "<group>"; };
+		F09241F82985793D001F695B /* DetailLocalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalCell.swift; sourceTree = "<group>"; };
+		F09241F92985793D001F695B /* DetailLocalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailLocalCell.xib; sourceTree = "<group>"; };
 		F09254B22984B08D009B095E /* OFUTU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OFUTU.entitlements; sourceTree = "<group>"; };
 		F0E663C2298421A9001F564D /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		F0E663C3298421A9001F564D /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
@@ -217,6 +229,10 @@
 			children = (
 				F0E663F42984473E001F564D /* SubCategoryCell.swift */,
 				F0E663F52984473E001F564D /* SubCategoryCell.xib */,
+				F09241F2298558FA001F695B /* LocalPlaceCell.swift */,
+				F09241F3298558FA001F695B /* LocalPlaceCell.xib */,
+				F09241F82985793D001F695B /* DetailLocalCell.swift */,
+				F09241F92985793D001F695B /* DetailLocalCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -234,6 +250,8 @@
 				F0576A74298462DC005133C9 /* ThirdIntroVC.swift */,
 				F0576A782984675D005133C9 /* WebVC.swift */,
 				F0389F862984DC3300072E2C /* LoginVC.swift */,
+				F09241F029855598001F695B /* LocalListVC.swift */,
+				F09241F629856C33001F695B /* DetailLocalVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -327,6 +345,7 @@
 			files = (
 				F00A9CA92983F01E005EA650 /* LaunchScreen.storyboard in Resources */,
 				F00A9CA62983F01E005EA650 /* Assets.xcassets in Resources */,
+				F09241FB2985793D001F695B /* DetailLocalCell.xib in Resources */,
 				F0E663F72984473E001F564D /* SubCategoryCell.xib in Resources */,
 				F0E663D1298421AA001F564D /* Pretendard-ExtraBold.otf in Resources */,
 				F0E663CE298421AA001F564D /* Pretendard-Bold.otf in Resources */,
@@ -339,6 +358,7 @@
 				F0389F8B2984E81300072E2C /* OFUTU1.mp4 in Resources */,
 				F0E663D2298421AA001F564D /* Pretendard-Thin.otf in Resources */,
 				F0E663CD298421AA001F564D /* Pretendard-Medium.otf in Resources */,
+				F09241F5298558FA001F695B /* LocalPlaceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0E663F62984473E001F564D /* SubCategoryCell.swift in Sources */,
+				F09241F129855598001F695B /* LocalListVC.swift in Sources */,
 				F0E663EB29843D19001F564D /* SubCategory.swift in Sources */,
 				F0389F8F29850B2300072E2C /* TimeManager.swift in Sources */,
 				F0E663DD298433B9001F564D /* LocalVC.swift in Sources */,
@@ -404,7 +425,10 @@
 				F0576A71298460E6005133C9 /* SecondIntroVM.swift in Sources */,
 				F0E663E929843C98001F564D /* MainCategory.swift in Sources */,
 				F0E663E529843B0B001F564D /* NetworkManager.swift in Sources */,
+				F09241FA2985793D001F695B /* DetailLocalCell.swift in Sources */,
+				F09241F729856C33001F695B /* DetailLocalVC.swift in Sources */,
 				F0E663E129843867001F564D /* FontManager.swift in Sources */,
+				F09241F4298558FA001F695B /* LocalPlaceCell.swift in Sources */,
 				F0E663F929844D89001F564D /* FirstIntroVC.swift in Sources */,
 				F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
