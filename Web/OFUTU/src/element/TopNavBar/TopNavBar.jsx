@@ -9,8 +9,18 @@ const TopNavBar = ({ selectedIndex, setSelectedIndex }) => {
     "ETC",
   ];
 
+  const tags_eng = [
+    "home",
+    "zeroWaste",
+    "fairTrade",
+    "eco",
+    "vegun",
+    "donation",
+    "etc",
+  ];
+
   const changeIndex = (index) => {
-    setSelectedIndex(index);
+    location.href = "/main/" + tags_eng[index];
   };
 
   return (

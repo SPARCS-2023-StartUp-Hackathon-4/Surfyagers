@@ -24,6 +24,7 @@ const FeedPage = () => {
         <div className="w-full h-full"></div>
       </div>
     );
+
   const onBack = () => {
     history.back();
   };

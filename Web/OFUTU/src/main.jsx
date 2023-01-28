@@ -7,11 +7,17 @@ import SuggestDoneFullPage from "./pages/SuggestDoneFullPage/SuggestDoneFullPage
 import MainPage from "./pages/MainPage/MainPage";
 import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 import FeedPage from "./pages/FeedPage/FeedPage";
+import FeedDetailPage from "./pages/FeedPage/FeedDetailPage";
+import HomePage from "./pages/HomePage/HomePage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div>hello world</div>,
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
   },
   {
     path: "/main/:tag",
@@ -22,6 +28,7 @@ const router = createBrowserRouter([
     element: <ProductDetailPage />,
   },
   { path: "/feed/:id", element: <FeedPage /> },
+  { path: "/feedDetail/:id", element: <FeedDetailPage /> },
   {
     path: "/tagSuggest",
     element: <TagSuggestFullPage />,

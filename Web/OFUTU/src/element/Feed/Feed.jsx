@@ -16,14 +16,14 @@ const Feed = () => {
         </div>
         <div
           onClick={() => {
-            feedClick(1);
+            feedClick(2);
           }}
         >
           <FullSizeImage id={15} />
         </div>
         <div
           onClick={() => {
-            feedClick(1);
+            feedClick(3);
           }}
         >
           <FullSizeImage id={16} />
@@ -31,7 +31,7 @@ const Feed = () => {
         <div
           className="row-span-2"
           onClick={() => {
-            feedClick(1);
+            feedClick(4);
           }}
         >
           <FullSizeImage id={17} />
@@ -39,14 +39,14 @@ const Feed = () => {
         <div
           className="row-span-2"
           onClick={() => {
-            feedClick(1);
+            feedClick(5);
           }}
         >
           <FullSizeImage id={18} />
         </div>
         <div
           onClick={() => {
-            feedClick(1);
+            feedClick(6);
           }}
         >
           <FullSizeImage id={19} />
@@ -54,21 +54,21 @@ const Feed = () => {
         <div
           className="row-span-2"
           onClick={() => {
-            feedClick(1);
+            feedClick(7);
           }}
         >
           <FullSizeImage id={20} />
         </div>
         <div
           onClick={() => {
-            feedClick(1);
+            feedClick(8);
           }}
         >
           <FullSizeImage id={21} />
         </div>
         <div
           onClick={() => {
-            feedClick(1);
+            feedClick(9);
           }}
         >
           <FullSizeImage id={22} />

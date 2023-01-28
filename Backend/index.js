@@ -32,6 +32,11 @@ app.get("/image/:id", async (req, res) => {
 app.get("/productList/:tag", async (req, res) => {
   const tag = req.params.tag;
 
+  if (tag != "zeroWaste") {
+    res.send("error");
+    return;
+  }
+
   const tagId = await pool(`SELECT tag_id FROM Tag WHERE tag_title="${tag}"`);
   const items = await pool(
     `SELECT * FROM Product WHERE tags like "%${tagId[0].tag_id}%"`
@@ -42,6 +47,12 @@ app.get("/productList/:tag", async (req, res) => {
 app.get("/productDetail/:id", async (req, res) => {
   const id = req.params.id;
   const item = await pool(`SELECT * FROM Product WHERE Product_id = ${id}`);
+  res.send(item[0]);
+});
+
+app.get("/feedDetail/:id", async (req, res) => {
+  const id = req.params.id;
+  const item = await pool(`SELECT * FROM Feed WHERE feeds_id = ${id}`);
   res.send(item[0]);
 });
 
