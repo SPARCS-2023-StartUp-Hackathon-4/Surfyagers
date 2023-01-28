@@ -65,6 +65,7 @@ class SecondIntroVC: UIViewController {
                 let thirdIntroVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdIntroVC") as! ThirdIntroVC
                 
                 thirdIntroVC.viewModel.name = self.viewModel.name
+                thirdIntroVC.viewModel.tagList = self.getTagList()
                 thirdIntroVC.modalTransitionStyle = .crossDissolve
                 thirdIntroVC.modalPresentationStyle = .overFullScreen
                 
@@ -141,5 +142,15 @@ class SecondIntroVC: UIViewController {
     private func changeButtonStatus() {
         nextButton.isEnabled = validateButton()
         nextButton.backgroundColor = nextButton.isEnabled ? .black : ColorManager.shared.getLightSilver()
+    }
+    
+    private func getTagList() -> [String] {
+        var tagList: [String] = Array<String>()
+        for tuple in imageClickedList {
+            if tuple.1 == true {
+                tagList.append(tuple.4.rawValue)
+            }
+        }
+        return tagList
     }
 }

@@ -18,6 +18,7 @@ class ThirdIntroVM {
     // Variable
     var name: String!
     var isEnabled: Bool = false
+    var tagList: [String]!
     
     // RxSwift
     let disposeBag = DisposeBag()
