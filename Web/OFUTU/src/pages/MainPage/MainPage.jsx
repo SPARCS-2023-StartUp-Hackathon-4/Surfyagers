@@ -18,6 +18,8 @@ const MainPage = () => {
   ];
 
   const tagIndex = +tags.indexOf(tag);
+  if (tags != "home" || tags != "zeroWaste") return <div>none</div>;
+
   const [selectedIndex, setSelectedIndex] = useState(tagIndex);
 
   return (

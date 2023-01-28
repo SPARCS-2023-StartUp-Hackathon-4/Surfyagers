@@ -21,7 +21,7 @@ const ConsumerFeeds = () => {
           />
         </svg>
       </div>
-      <div className="grid grid-cols-3 gap-[2px]">
+      <div className="grid grid-cols-3 gap-[6px]">
         <FullSizeImage id={14} />
         {Array.from({ length: 8 }).map((_, index) => {
           return <FullSizeImage id={index + 6} />;

@@ -25,7 +25,7 @@ const ProductDetail = ({ productId }) => {
     );
 
   const clickConsumerFeeds = () => {
-    location.href = "/feeds/" + productId;
+    location.href = "/feed/" + productId;
   };
 
   return (
@@ -83,7 +83,7 @@ const ProductDetail = ({ productId }) => {
       <div className="h-[105px]"></div>
       <div className="fixed bottom-0 pb-[37px] bg-[#fff] w-screen flex  justify-between pt-[13px] border-t-[0.5px] border-[#DCDCDC]">
         <div className="flex items-center">
-          <div className="flex items-center ml-[6px] px-[10px] py-[7px] border-[1px] rounded-full w-fit border-[#DCDCDC]">
+          <div className="flex items-center ml-[16px] px-[10px] py-[7px] border-[1px] rounded-full w-fit border-[#DCDCDC]">
             <svg
               width="17"
               height="15"
@@ -119,7 +119,7 @@ const ProductDetail = ({ productId }) => {
             </svg>
           </div>
         </div>
-        <div className="py-[14px] px-[24px] bg-black text-white rounded-[3px] mr-[29px] text-[16px] font-medium">
+        <div className="py-[14px] px-[24px] bg-black text-white rounded-[3px] mr-[16px] text-[16px] font-medium">
           피드 등록하기
         </div>
       </div>

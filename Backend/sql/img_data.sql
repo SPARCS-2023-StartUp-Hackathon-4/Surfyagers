@@ -27,3 +27,13 @@ INSERT INTO Image VALUES (25, "/ofutu/zerowaste_like_1.png");
 INSERT INTO Image VALUES (26, "/ofutu/zerowaste_like_2.png");
 INSERT INTO Image VALUES (27, "/ofutu/zerowaste_like_3.png");
 INSERT INTO Image VALUES (28, "/ofutu/productDetail.png");
+INSERT INTO Image VALUES (29, "/ofutu/feeddetail_1_1.png");
+INSERT INTO Image VALUES (30, "/ofutu/feeddetail_1_2.png");
+INSERT INTO Image VALUES (31, "/ofutu/feeddetail_1_3.png");
+INSERT INTO Image VALUES (32, "/ofutu/feeddetail_1_4.png");
+INSERT INTO Image VALUES (33, "/ofutu/feeddetail_1_5.png");
+INSERT INTO Image VALUES (34, "/ofutu/feeddetail_1_6.png");
+INSERT INTO Image VALUES (35, "/ofutu/feeddetail_1_7.png");
+INSERT INTO Image VALUES (36, "/ofutu/feeddetail_1_8.png");
+INSERT INTO Image VALUES (37, "/ofutu/feeddetail_1_9.png");
+
