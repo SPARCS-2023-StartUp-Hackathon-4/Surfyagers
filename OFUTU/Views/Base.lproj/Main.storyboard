@@ -281,7 +281,7 @@
             <objects>
                 <viewController id="UaA-Lv-wf4" customClass="PagingContentViewController" customModule="PagingKit" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N19-H3-usm">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="581"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ymh-mw-laq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -811,6 +811,7 @@
                         <outlet property="fairTradeImageView" destination="YYL-Mq-mIM" id="uBm-IE-cu8"/>
                         <outlet property="nameLabel" destination="e9q-yR-D3z" id="O6F-AO-vdZ"/>
                         <outlet property="nextButton" destination="T98-NJ-1NL" id="ysJ-ND-0lw"/>
+                        <outlet property="topStackView" destination="Sn0-yB-cNE" id="NbH-Sd-UNP"/>
                         <outlet property="vegunImageView" destination="i05-Ds-AFM" id="9es-nn-oIY"/>
                         <outlet property="zeroWasteImageView" destination="hMv-Id-5wa" id="nWw-76-x6B"/>
                     </connections>

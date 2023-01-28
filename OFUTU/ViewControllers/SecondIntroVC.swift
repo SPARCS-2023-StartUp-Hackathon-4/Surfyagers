@@ -24,6 +24,9 @@ class SecondIntroVC: UIViewController {
     // UIButton
     @IBOutlet weak var nextButton: UIButton!
     
+    // UIStackView
+    @IBOutlet weak var topStackView: UIStackView!
+    
     // ViewModel
     let viewModel = SecondIntroVM()
     
@@ -41,6 +44,7 @@ class SecondIntroVC: UIViewController {
         super.viewDidLoad()
         initUI()
         action()
+        configureEditMode()
     }
     
     private func initUI() {
@@ -62,14 +66,18 @@ class SecondIntroVC: UIViewController {
     private func action() {
         nextButton.rx.tap
             .subscribe(onNext: { _ in
-                let thirdIntroVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdIntroVC") as! ThirdIntroVC
-                
-                thirdIntroVC.viewModel.name = self.viewModel.name
-                thirdIntroVC.viewModel.tagList = self.getTagList()
-                thirdIntroVC.modalTransitionStyle = .crossDissolve
-                thirdIntroVC.modalPresentationStyle = .overFullScreen
-                
-                self.present(thirdIntroVC, animated: true)
+                if self.viewModel.editorMode == .new {
+                    let thirdIntroVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ThirdIntroVC") as! ThirdIntroVC
+                    
+                    thirdIntroVC.viewModel.name = self.viewModel.name
+                    thirdIntroVC.viewModel.tagList = self.getTagList()
+                    thirdIntroVC.modalTransitionStyle = .crossDissolve
+                    thirdIntroVC.modalPresentationStyle = .overFullScreen
+                    
+                    self.present(thirdIntroVC, animated: true)
+                } else if self.viewModel.editorMode == .edit {
+                    self.dismiss(animated: true)
+                }
             })
             .disposed(by: disposeBag)
         
@@ -152,5 +160,40 @@ class SecondIntroVC: UIViewController {
             }
         }
         return tagList
+    }
+    
+    private func configureEditMode() {
+        if viewModel.editorMode == .edit {
+            setEditData()
+            topStackView.isHidden = true
+            nextButton.setTitle("완료", for: .normal)
+        }
+    }
+    
+    private func setEditData() {
+        let tagList = UserDefaultsManager.shared.getUserTagList()
+        
+        for tagString in tagList {
+            switch tagString {
+            case "제로웨이스트":
+                imageClickedList[0].1 = true
+                tapImageView(index: 0)
+            case "비건":
+                imageClickedList[1].1 = true
+                tapImageView(index: 1)
+            case "친환경":
+                imageClickedList[2].1 = true
+                tapImageView(index: 2)
+            case "공정무역":
+                imageClickedList[3].1 = true
+                tapImageView(index: 3)
+            case "기부":
+                imageClickedList[4].1 = true
+                tapImageView(index: 4)
+            default:
+                break
+            }
+        }
+        changeButtonStatus()
     }
 }
