@@ -1,29 +1,21 @@
-const express = require("express");
-const mysql = require("mysql");
+import * as dotenv from "dotenv";
+dotenv.config();
+import express from "express";
+import { connection, pool } from "./database/mysql.js";
+import { s3, getSignedUrl } from "./database/s3.js";
+
 const app = express();
-const port = 5000;
+const port = 8000;
 
-var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  database: "ofutu",
-  password: "root",
-  port: 33062,
-});
+const { MYSQL_HOST, MYSQL_PASSWD, AWS_SECRET_KEY, AWS_ACCESS_KEY, AWS_REGION } =
+  process.env;
 
-con.connect(function (err) {
+connection(MYSQL_HOST, MYSQL_PASSWD).connect(function (err) {
   if (err) throw err;
   console.log("Connected!");
 });
 
-const pool = (q) => {
-  return new Promise((resolve, reject) => {
-    con.query(q, (err, result, fields) => {
-      if (err) reject(err);
-      resolve(result);
-    });
-  });
-};
+s3(AWS_SECRET_KEY, AWS_ACCESS_KEY, AWS_REGION);
 
 app.get("/", (req, res) => {
   res.send("hello world!");
