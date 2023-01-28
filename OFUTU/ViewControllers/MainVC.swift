@@ -41,6 +41,27 @@ class MainVC: UIViewController {
         initUI()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstLoad?()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PagingMenuViewController {
+            menuViewController = vc
+            menuViewController.dataSource = self
+            menuViewController.delegate = self
+        } else if let vc = segue.destination as? PagingContentViewController  {
+            contentViewController = vc
+            contentViewController?.dataSource = self
+            contentViewController?.delegate = self
+        }
+    }
+    
     private func initUI() {
         // PagingView
         configurePagingViews()
