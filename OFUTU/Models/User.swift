@@ -11,5 +11,5 @@ struct User {
     var name: String
     var tagList: [String]
     var goal: String
-    var beginDay: Int
+    var beginDay: Date
 }
