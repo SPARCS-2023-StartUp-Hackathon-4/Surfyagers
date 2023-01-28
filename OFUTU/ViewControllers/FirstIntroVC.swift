@@ -49,6 +49,7 @@ class FirstIntroVC: UIViewController {
         super.viewDidLoad()
         initUI()
         action()
+        bind()
     }
     
     private func initUI() {
@@ -74,6 +75,14 @@ class FirstIntroVC: UIViewController {
         nextButton.rx.tap
             .subscribe(onNext: { _ in
                 // TODO: SecondIntro 화면으로 이동하는 코드 추가 하기
+                let secondIntroVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondIntroVC") as! SecondIntroVC
+                
+                secondIntroVC.viewModel.editorMode = .new
+                secondIntroVC.viewModel.name = self.nameTextField.text
+                secondIntroVC.modalTransitionStyle = .crossDissolve
+                secondIntroVC.modalPresentationStyle = .overFullScreen
+                
+                self.present(secondIntroVC, animated: true)
             })
             .disposed(by: disposeBag)
         
