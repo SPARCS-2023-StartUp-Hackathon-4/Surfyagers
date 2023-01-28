@@ -6,24 +6,65 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
 
 class LocalListVC: UIViewController {
-
+    // UIButton
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    
+    // UITableView
+    @IBOutlet weak var localTableView: UITableView!
+    
+    // Constants
+    let BUTTON_IMAGE: UIImage? = UIImage(systemName: "magnifyingglass", withConfiguration: UIImage.SymbolConfiguration(pointSize: 23))
+    let TABLE_VIEW_ROW_NUMBER = 4
+    let NUMBER_ARRAY = [0, 1, 2, 3]
+    
+    // RxSwift
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initUI()
+        action()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func initUI() {
+        // UITableView
+        configureTableView()
     }
-    */
+    
+    private func action() {
+        backButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.dismiss(animated: true)
+            })
+            .disposed(by: disposeBag)
+    }
 
+    private func configureTableView() {
+        localTableView.dataSource = self
+        localTableView.delegate = self
+        localTableView.register(UINib(nibName: "LocalPlaceCell", bundle: nil), forCellReuseIdentifier: "LocalPlaceCell")
+    }
+}
+
+extension LocalListVC: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return NUMBER_ARRAY.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LocalPlaceCell", for: indexPath) as! LocalPlaceCell
+        
+        cell.setData(index: NUMBER_ARRAY[indexPath.row])
+        cell.selectionStyle = .none
+        
+        return cell
+    }
+    
+    
 }
