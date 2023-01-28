@@ -17,6 +17,7 @@ class FirstIntroVM {
     
     // Variable
     var isEnabled: Bool = false
+    var editorMode: EditorMode = .new
     
     // RxSwift
     let disposeBag = DisposeBag()
@@ -34,6 +35,7 @@ class FirstIntroVM {
             self.output.nextButtonValidation.onNext(self.validateName(name: name))
         })
         .disposed(by: disposeBag)
+        
     }
     
     private func validateName(name: String) -> Bool {
