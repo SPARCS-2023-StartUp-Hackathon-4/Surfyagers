@@ -18,6 +18,8 @@ enum ImageName: String {
     case C_FAIR_TRADE_IMAGE = "C_FairTradeImage"
     case ETC_IMAGE = "ETCImage"
     case C_ETC_IMAGE = "C_ETCImage"
+    case DONATION_IMAGE = "DonationImage"
+    case C_DONATION_IMAGE = "C_DonationImage"
 }
 
 class ImageManager {

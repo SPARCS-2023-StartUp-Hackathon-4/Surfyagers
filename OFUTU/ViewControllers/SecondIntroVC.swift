@@ -16,7 +16,7 @@ class SecondIntroVC: UIViewController {
     @IBOutlet weak var vegunImageView: UIImageView!
     @IBOutlet weak var ecoFriendlyImageView: UIImageView!
     @IBOutlet weak var fairTradeImageView: UIImageView!
-    @IBOutlet weak var etcImageView: UIImageView!
+    @IBOutlet weak var donationImageView: UIImageView!
     
     // UILabel
     @IBOutlet weak var nameLabel: UILabel!
@@ -56,7 +56,7 @@ class SecondIntroVC: UIViewController {
             (vegunImageView, false, ImageManager.shared.getImage(.VEGUN_IMAGE), ImageManager.shared.getImage(.C_VEGUN_IMAGE), .vegun),
             (ecoFriendlyImageView, false, ImageManager.shared.getImage(.ECO_FRIENDLY_IMAGE), ImageManager.shared.getImage(.C_ECO_FRIENDLY_IMAGE), .ecoFriendly),
             (fairTradeImageView, false, ImageManager.shared.getImage(.FAIR_TRADE_IMAGE), ImageManager.shared.getImage(.C_FAIR_TRADE_IMAGE), .fairTrade),
-            (etcImageView, false, ImageManager.shared.getImage(.ETC_IMAGE), ImageManager.shared.getImage(.C_ETC_IMAGE), .etc)]
+            (donationImageView, false, ImageManager.shared.getImage(.DONATION_IMAGE), ImageManager.shared.getImage(.C_DONATION_IMAGE), .donation)]
     }
 
     private func action() {
@@ -104,7 +104,7 @@ class SecondIntroVC: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        etcImageView.rx.tapGesture()
+        donationImageView.rx.tapGesture()
             .when(.recognized)
             .subscribe(onNext: { _ in
                 self.tapImageView(index: 4)

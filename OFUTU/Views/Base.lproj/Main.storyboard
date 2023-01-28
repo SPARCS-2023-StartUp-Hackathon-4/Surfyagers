@@ -806,8 +806,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="donationImageView" destination="E81-cc-vQR" id="aT2-bx-fZd"/>
                         <outlet property="ecoFriendlyImageView" destination="TtG-nW-NiN" id="Bm5-iN-pNr"/>
-                        <outlet property="etcImageView" destination="E81-cc-vQR" id="aT2-bx-fZd"/>
                         <outlet property="fairTradeImageView" destination="YYL-Mq-mIM" id="uBm-IE-cu8"/>
                         <outlet property="nameLabel" destination="e9q-yR-D3z" id="O6F-AO-vdZ"/>
                         <outlet property="nextButton" destination="T98-NJ-1NL" id="ysJ-ND-0lw"/>
