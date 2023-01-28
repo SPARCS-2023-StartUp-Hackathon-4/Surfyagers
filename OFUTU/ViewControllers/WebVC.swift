@@ -7,11 +7,11 @@
 
 import UIKit
 
-class WebVC: UITabBarController {
+class WebVC: UIViewController {
     // UIView
-    @IBOutlet weak var webView: UIView!
+    @IBOutlet var webView: UIView!
     
-    // Variable
+    // String
     var requestUrl: String!
     
     override func viewDidLoad() {
@@ -19,3 +19,6 @@ class WebVC: UITabBarController {
         WebViewManager.shared.getWebView(view: webView, viewcontroller: self, urlString: requestUrl)
     }
 }
+
+
+
