@@ -21,15 +21,28 @@ const MainPage = () => {
   if (tag == "home") {
     location.href = "/home";
   }
-  if (tag != "zeroWaste") return <div>none</div>;
-
   const [selectedIndex, setSelectedIndex] = useState(tagIndex);
+
+  if (tag != "zeroWaste")
+    return (
+      <div className="h-screen">
+        <TopNavBar
+          selectedIndex={selectedIndex}
+          setSelectedIndex={setSelectedIndex}
+          from={"main"}
+        />
+        <div className="h-[calc(100%-200px)] flex items-center justify-center">
+          <img src="/images/repair.png" alt="" />
+        </div>
+      </div>
+    );
 
   return (
     <div>
       <TopNavBar
         selectedIndex={selectedIndex}
         setSelectedIndex={setSelectedIndex}
+        from={"main"}
       />
       <FullSizeImage id={5} />
       <div className="mt-[-146px] z-1">

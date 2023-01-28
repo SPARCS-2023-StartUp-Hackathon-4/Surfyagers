@@ -1,26 +1,42 @@
-const TopNavBar = ({ selectedIndex, setSelectedIndex }) => {
-  const tags = [
-    "홈",
-    "제로웨이스트",
-    "공정무역",
-    "친환경",
-    "비건",
-    "기부",
-    "ETC",
-  ];
+const TopNavBar = ({ selectedIndex, setSelectedIndex, from }) => {
+  let tags = [];
+  let tags_eng = [];
 
-  const tags_eng = [
-    "home",
-    "zeroWaste",
-    "fairTrade",
-    "eco",
-    "vegun",
-    "donation",
-    "etc",
-  ];
-
+  if (from == "main") {
+    tags = ["홈", "제로웨이스트", "공정무역", "친환경", "비건", "기부", "ETC"];
+    tags_eng = [
+      "home",
+      "zeroWaste",
+      "fairTrade",
+      "eco",
+      "vegun",
+      "donation",
+      "etc",
+    ];
+  } else if (from == "comunity") {
+    tags = [
+      "홈",
+      "자유주제",
+      "제로웨이스트",
+      "공정무역",
+      "친환경",
+      "비건",
+      "기부",
+      "ETC",
+    ];
+    tags_eng = [
+      "home",
+      "freeSubject",
+      "zeroWaste",
+      "fairTrade",
+      "eco",
+      "vegun",
+      "donation",
+      "etc",
+    ];
+  }
   const changeIndex = (index) => {
-    location.href = "/main/" + tags_eng[index];
+    location.href = `/${from}/` + tags_eng[index];
   };
 
   return (

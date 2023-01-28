@@ -9,6 +9,7 @@ import ProductDetailPage from "./pages/ProductDetailPage/ProductDetailPage";
 import FeedPage from "./pages/FeedPage/FeedPage";
 import FeedDetailPage from "./pages/FeedPage/FeedDetailPage";
 import HomePage from "./pages/HomePage/HomePage";
+import ComunityPage from "./pages/ComunityPage/ComunityPage";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/main/:tag",
     element: <MainPage />,
+  },
+  {
+    path: "/comunity/:tag",
+    element: <ComunityPage />,
   },
   {
     path: "/product/:id",

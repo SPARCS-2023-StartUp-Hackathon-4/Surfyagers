@@ -27,6 +27,21 @@ const FeedDetailPage = () => {
       </div>
     );
 
+  const users = [
+    "뽀로로",
+    "패티",
+    "해리",
+    "에디",
+    "로보",
+    "크롱",
+    "시현",
+    "bigsun",
+    "intellijang",
+  ];
+
+  const level = [4, 3, 2, 4, 1, 2, 1, 2, 4];
+  const levelColor = ["#E4EFA4", "#C5D853", "#85D16A", "#3AB6A9"];
+
   return (
     <div>
       <div className="fixed flex pt-[54px] pb-[24px] w-full bg-white">
@@ -54,6 +69,21 @@ const FeedDetailPage = () => {
       </div>
       <div className="p-[21px]" style={{ whiteSpace: "pre-wrap" }}>
         {data.content}
+      </div>
+      <div className="fixed bottom-0 pb-[108px] right-[20px] flex items-center">
+        <svg
+          width="15"
+          height="14"
+          viewBox="0 0 15 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.6106 6.59235C11.8527 5.74473 11.0824 3.83756 10.917 2.98993C10.5626 1.9304 10.2081 0.80023 8.15246 0.164507C5.48539 -0.660285 -0.0702131 1.64786 0.000671925 6.38045C0.071557 11.113 6.09679 14.5036 10.917 13.9385C15.7372 13.3734 15.808 7.65189 13.6106 6.59235Z"
+            fill={levelColor[level[id - 1] - 1]}
+          />
+        </svg>
+        <div className="pl-[6px]">{users[id - 1]}</div>
       </div>
       <div className="fixed bottom-0 pb-[37px] bg-[#fff] w-screen flex  justify-between pt-[13px] border-t-[0.5px] border-[#DCDCDC]">
         <div className="ml-[24px]">
