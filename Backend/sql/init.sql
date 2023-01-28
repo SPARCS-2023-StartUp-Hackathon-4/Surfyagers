@@ -13,8 +13,8 @@ CREATE TABLE Tag (
 CREATE TABLE Product (
     product_id bigint not null primary key, 
     product_name varchar(255),
-    compeney varchar(255),
-    compeney_url varchar(255),
+    company varchar(255),
+    company_url varchar(255),
     imgs varchar(1024), 
     tags varchar(1024), 
     heart bigint, 

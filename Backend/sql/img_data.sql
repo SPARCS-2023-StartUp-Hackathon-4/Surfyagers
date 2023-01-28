@@ -21,3 +21,8 @@ INSERT INTO Image VALUES (19, "/ofutu/feeddetail_6.png");
 INSERT INTO Image VALUES (20, "/ofutu/feeddetail_7.png");
 INSERT INTO Image VALUES (21, "/ofutu/feeddetail_8.png");
 INSERT INTO Image VALUES (22, "/ofutu/feeddetail_9.png");
+INSERT INTO Image VALUES (23, "/ofutu/zerowaste_5.png");
+INSERT INTO Image VALUES (24, "/ofutu/zerowaste_6.png");
+INSERT INTO Image VALUES (25, "/ofutu/zerowaste_like_1.png");
+INSERT INTO Image VALUES (26, "/ofutu/zerowaste_like_2.png");
+INSERT INTO Image VALUES (27, "/ofutu/zerowaste_like_3.png");

@@ -1,12 +1,18 @@
 import * as mysql from "mysql";
 
+let con = {};
+
 export const connection = (MYSQL_HOST, MYSQL_PASSWD) => {
-  return mysql.createConnection({
+  con = mysql.createConnection({
     host: MYSQL_HOST,
     user: "sparcs",
     database: "ofutu",
     password: MYSQL_PASSWD,
     port: 3306,
+  });
+  con.connect(function (err) {
+    if (err) throw err;
+    console.log("Connected!");
   });
 };
 
