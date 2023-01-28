@@ -278,6 +278,223 @@
             </objects>
             <point key="canvasLocation" x="-1109" y="711"/>
         </scene>
+        <!--First IntroVC-->
+        <scene sceneID="90M-Hj-41y">
+            <objects>
+                <viewController storyboardIdentifier="FirstIntroVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cYG-xV-QOg" customClass="FirstIntroVC" customModule="Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0U5-2M-jS0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-WB-Lcv">
+                                <rect key="frame" x="152" y="71" width="86" height="4"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wia-ks-ktA">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="4"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="UOj-3c-RGj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fQ-Cn-lS2">
+                                        <rect key="frame" x="31" y="0.0" width="24" height="4"/>
+                                        <color key="backgroundColor" name="LightSilver"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="JpL-RA-GQx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ooj-7q-Ktr">
+                                        <rect key="frame" x="62" y="0.0" width="24" height="4"/>
+                                        <color key="backgroundColor" name="LightSilver"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="nbU-9W-XG2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="463-q7-CDq"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rZd-OA-BGU">
+                                <rect key="frame" x="24" y="116.99999999999999" width="342" height="148.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idq-8f-6EC">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="17.666666666666668"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="안녕하세요">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-SemiBold"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="!">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="15" name="Pretendard-SemiBold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AnQ-Eg-yLY">
+                                        <rect key="frame" x="0.0" y="47.666666666666657" width="342" height="101"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-eZ-MoV">
+                                                <rect key="frame" x="0.0" y="0.0" width="342" height="30.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="OFUTU">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="가">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAM-Yx-coL">
+                                                <rect key="frame" x="0.0" y="35.333333333333343" width="342" height="30.333333333333329"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="당신의">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="어떤">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="이름으로">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="26" name="Pretendard-SemiBold"/>
+                                                            <font key="NSOriginalFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="부르면 좋을까요?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhQ-ts-v3e">
+                                                <rect key="frame" x="0.0" y="70.666666666666686" width="342" height="30.333333333333329"/>
+                                                <fontDescription key="fontDescription" name="Pretendard-SemiBold" family="Pretendard" pointSize="26"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gNn-rG-zFO">
+                                <rect key="frame" x="69" y="434.66666666666669" width="252" height="55.333333333333314"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BX9-Pf-aIV">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="18.666666666666668"/>
+                                        <color key="backgroundColor" name="White"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="light" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-bX-b4G">
+                                        <rect key="frame" x="0.0" y="23.666666666666629" width="252" height="2"/>
+                                        <color key="backgroundColor" name="Nickel"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="c0o-J3-gsU"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wdt-8y-eJG">
+                                        <rect key="frame" x="0.0" y="30.666666666666629" width="252" height="24.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bg-p5-wYR">
+                                                <rect key="frame" x="0.0" y="10" width="252" height="14.666666666666664"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="나중에 수정할 수 있어요 :)">
+                                                        <attributes>
+                                                            <color key="NSColor" name="OldSilver"/>
+                                                            <font key="NSFont" size="12.5" name="Pretendard-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="10" left="0.0" bottom="0.0" right="0.0"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhi-kY-N5L">
+                                <rect key="frame" x="24" y="741.66666666666663" width="342" height="56.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Rhi-kY-N5L" secondAttribute="height" multiplier="6.08:1" id="Zyo-Ku-dBI"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="다음으로"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s3J-HS-hhP"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="s3J-HS-hhP" firstAttribute="trailing" secondItem="rZd-OA-BGU" secondAttribute="trailing" constant="24" id="12E-Yn-D9G"/>
+                            <constraint firstItem="s3J-HS-hhP" firstAttribute="trailing" secondItem="Rhi-kY-N5L" secondAttribute="trailing" constant="24" id="1oI-Sc-Wz6"/>
+                            <constraint firstItem="s3J-HS-hhP" firstAttribute="trailing" secondItem="gNn-rG-zFO" secondAttribute="trailing" constant="69" id="2xF-cI-kyj"/>
+                            <constraint firstItem="gNn-rG-zFO" firstAttribute="top" secondItem="rZd-OA-BGU" secondAttribute="bottom" constant="169" id="GbN-f1-uIf"/>
+                            <constraint firstItem="s3J-HS-hhP" firstAttribute="bottom" secondItem="Rhi-kY-N5L" secondAttribute="bottom" constant="12" id="O5n-Gs-8Am"/>
+                            <constraint firstItem="rZd-OA-BGU" firstAttribute="leading" secondItem="s3J-HS-hhP" secondAttribute="leading" constant="24" id="QH3-60-M0C"/>
+                            <constraint firstItem="s4O-WB-Lcv" firstAttribute="centerX" secondItem="0U5-2M-jS0" secondAttribute="centerX" id="UEx-rp-nh2"/>
+                            <constraint firstItem="gNn-rG-zFO" firstAttribute="leading" secondItem="s3J-HS-hhP" secondAttribute="leading" constant="69" id="YaQ-45-uzl"/>
+                            <constraint firstItem="rZd-OA-BGU" firstAttribute="top" secondItem="s4O-WB-Lcv" secondAttribute="bottom" constant="42" id="eCN-Zj-3Pd"/>
+                            <constraint firstAttribute="trailing" secondItem="s4O-WB-Lcv" secondAttribute="trailing" constant="152" id="nwR-WA-Tfq"/>
+                            <constraint firstItem="s4O-WB-Lcv" firstAttribute="top" secondItem="s3J-HS-hhP" secondAttribute="top" constant="24" id="rBv-Jr-0Ct"/>
+                            <constraint firstItem="Rhi-kY-N5L" firstAttribute="leading" secondItem="s3J-HS-hhP" secondAttribute="leading" constant="24" id="uL7-R6-vwg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineView" destination="ebU-bX-b4G" id="1gL-a8-AIq"/>
+                        <outlet property="nameStackView" destination="gNn-rG-zFO" id="5Ff-VX-eWp"/>
+                        <outlet property="nameTextField" destination="BX9-Pf-aIV" id="X5q-gf-1UH"/>
+                        <outlet property="nextButton" destination="Rhi-kY-N5L" id="b99-z0-BVu"/>
+                        <outlet property="stackViewConstraint" destination="GbN-f1-uIf" id="pba-Mw-cjQ"/>
+                        <outlet property="titleStackView" destination="rZd-OA-BGU" id="1A0-Ez-Mhc"/>
+                        <outlet property="validateLabel" destination="3bg-p5-wYR" id="Edp-OT-XW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XjF-It-nzL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1618" y="-705"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CategoryIconImage" width="18" height="19.333333969116211"/>
@@ -286,6 +503,15 @@
         <image name="MainLogoImage" width="124" height="20.333333969116211"/>
         <image name="MyPageIconImage" width="18" height="19.333333969116211"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <namedColor name="LightSilver">
+            <color red="0.85100001096725464" green="0.85100001096725464" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Nickel">
+            <color red="0.45100000500679016" green="0.45100000500679016" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OldSilver">
+            <color red="0.51800000667572021" green="0.51800000667572021" blue="0.51800000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Platinum">
             <color red="0.90200001001358032" green="0.90200001001358032" blue="0.90200001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
