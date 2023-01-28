@@ -21,7 +21,7 @@ class MainVC: UIViewController {
     let focusView = UnderlineFocusView()
     
     // Variables
-    var dataSource = [(menuTitle: MainCategory.main.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .main, selectedSubCategory: .home)), (menuTitle: MainCategory.community.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .community, selectedSubCategory: .home))]
+    var dataSource = [(menuTitle: MainCategory.main.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .main)), (menuTitle: MainCategory.community.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .community))]
     var subCategoryList: [SubCategory] = [.home, .zeroWaste, .fairTrade, .ecoFriendly, .vegun, .donation, .etc]
     var selectedSubCategory: SubCategory = .home
     lazy var firstLoad: (() -> Void)? = { [weak self, menuViewController, contentViewController] in
@@ -120,9 +120,9 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedSubCategory = subCategoryList[indexPath.row]
         
-        dataSource[0].1 = HomeManager.shared.getViewController(selectedMainCategory: .main, selectedSubCategory: selectedSubCategory)
+        dataSource[0].1 = HomeManager.shared.getViewController(selectedMainCategory: .main)
         
-        dataSource[1].1 = HomeManager.shared.getViewController(selectedMainCategory: .community, selectedSubCategory: selectedSubCategory)
+        dataSource[1].1 = HomeManager.shared.getViewController(selectedMainCategory: .community)
         
         menuViewController.reloadData()
         contentViewController.reloadData()
