@@ -20,6 +20,10 @@ enum ImageName: String {
     case C_ETC_IMAGE = "C_ETCImage"
     case DONATION_IMAGE = "DonationImage"
     case C_DONATION_IMAGE = "C_DonationImage"
+    case FIRST_LOCAL_IMAGE = "FirstLocalImage"
+    case SECOND_LOCAL_IMAGE = "SecondLocalImage"
+    case THIRD_LOCAL_IMAGE = "ThirdLocalImage"
+    case FOURTH_LOCAL_IMAGE = "FourthLocalImage"
 }
 
 class ImageManager {
