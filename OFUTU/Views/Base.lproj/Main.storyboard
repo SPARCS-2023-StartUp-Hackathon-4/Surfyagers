@@ -121,6 +121,7 @@
         <!--카테고리-->
         <scene sceneID="Tuu-82-Qmc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEp-Jc-Z2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CategoryVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QxU-SR-dd9" customClass="CategoryVC" customModule="OFUTU" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bVC-9h-5Bu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
@@ -133,18 +134,282 @@
                                     <constraint firstAttribute="height" constant="1" id="gmb-Rc-VwI"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainLogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-5O-Zmm">
+                                <rect key="frame" x="131.66666666666666" y="59" width="126.99999999999997" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UDw-kj-6Sq"/>
+                                    <constraint firstAttribute="width" constant="127" id="haq-Sm-6D8"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdb-zB-Vl2">
+                                <rect key="frame" x="336" y="59" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="H93-Pd-lbv"/>
+                                    <constraint firstAttribute="width" constant="30" id="rzu-18-E5w"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-52-7gS">
+                                <rect key="frame" x="21" y="151" width="348" height="245.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="uX5-Ji-gzr">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="39.666666666666664"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="izE-kz-aWg">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmN-bJ-xN5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="의류">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEc-eh-lyt">
+                                                        <rect key="frame" x="0.0" y="38.666666666666657" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="4SL-k8-4So"/>
+                                                            <constraint firstAttribute="height" constant="1" id="f00-4u-dmv"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0fi-Qs-IZd">
+                                                <rect key="frame" x="191" y="0.0" width="157" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkJ-Co-aJe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="잡화">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOy-SC-mr7">
+                                                        <rect key="frame" x="0.0" y="38.666666666666657" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="DQ0-bP-fvX"/>
+                                                            <constraint firstAttribute="height" constant="1" id="Ygb-ck-yo0"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="rl6-uu-4ix"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="664-ki-SEk">
+                                        <rect key="frame" x="0.0" y="68.666666666666657" width="348" height="39.666666666666657"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L5L-vD-UZq">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-Gz-v4Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="악세사리">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jR-CO-onB">
+                                                        <rect key="frame" x="0.0" y="38.666666666666657" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="7G1-uw-jqc"/>
+                                                            <constraint firstAttribute="height" constant="1" id="c0n-kI-v2R"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RkJ-cu-KMP">
+                                                <rect key="frame" x="191" y="0.0" width="157" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홈・리빙" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1L-og-cEX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="46.666666666666664" height="18.666666666666668"/>
+                                                        <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s5N-Ww-jnU">
+                                                        <rect key="frame" x="0.0" y="38.666666666666657" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="2Qb-ix-y5d"/>
+                                                            <constraint firstAttribute="height" constant="1" id="AyT-zi-ekN"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="upB-aF-Rzx"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hOS-AX-xW8">
+                                        <rect key="frame" x="0.0" y="137.33333333333331" width="348" height="39.666666666666657"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="om2-16-YYZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgT-ZA-hWJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="뷰티">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWW-mq-XUh">
+                                                        <rect key="frame" x="0.0" y="38.666666666666686" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="V0Y-vP-2DX"/>
+                                                            <constraint firstAttribute="height" constant="1" id="YBo-Jh-Ca0"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PF7-Kl-HAF">
+                                                <rect key="frame" x="191" y="0.0" width="157" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5t-ok-pTv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="푸드">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qC5-n5-dMx">
+                                                        <rect key="frame" x="0.0" y="38.666666666666686" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="iKf-TC-8R8"/>
+                                                            <constraint firstAttribute="height" constant="1" id="v1h-LU-VZ7"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="TSo-fV-yaQ"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ljo-Hw-4yS">
+                                        <rect key="frame" x="0.0" y="206" width="348" height="39.666666666666657"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="i1a-6k-3mr">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qER-hd-EQ4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="반려동물">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evx-7v-GJ7">
+                                                        <rect key="frame" x="0.0" y="38.666666666666686" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="157" id="GaJ-Mb-Xsq"/>
+                                                            <constraint firstAttribute="height" constant="1" id="h5E-zr-Xyd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rak-lG-VhZ">
+                                                <rect key="frame" x="191" y="0.0" width="157" height="39.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-cQ-QyO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="18.666666666666668"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="기타">
+                                                                <attributes>
+                                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <font key="NSFont" size="16" name="Pretendard-Medium"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obh-FS-G6C">
+                                                        <rect key="frame" x="0.0" y="38.666666666666686" width="157" height="1"/>
+                                                        <color key="backgroundColor" name="Gainsboro"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="6NF-P3-fqV"/>
+                                                            <constraint firstAttribute="width" constant="157" id="wMV-6w-8vh"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="157" id="NNM-aG-Fvs"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x2e-Eg-BPM"/>
                         <color key="backgroundColor" name="White"/>
                         <constraints>
+                            <constraint firstItem="Sdb-zB-Vl2" firstAttribute="centerY" secondItem="mhN-5O-Zmm" secondAttribute="centerY" id="HPf-No-rZB"/>
                             <constraint firstAttribute="trailing" secondItem="IV9-zr-acw" secondAttribute="trailing" id="ItE-IT-f0N"/>
+                            <constraint firstItem="DEV-52-7gS" firstAttribute="leading" secondItem="x2e-Eg-BPM" secondAttribute="leading" constant="21" id="Jz3-el-6Sl"/>
+                            <constraint firstItem="x2e-Eg-BPM" firstAttribute="trailing" secondItem="Sdb-zB-Vl2" secondAttribute="trailing" constant="24" id="M4J-WJ-afd"/>
+                            <constraint firstItem="mhN-5O-Zmm" firstAttribute="top" secondItem="x2e-Eg-BPM" secondAttribute="top" constant="12" id="QuJ-Wq-ite"/>
                             <constraint firstItem="x2e-Eg-BPM" firstAttribute="bottom" secondItem="IV9-zr-acw" secondAttribute="bottom" id="fZL-gD-bBi"/>
+                            <constraint firstItem="x2e-Eg-BPM" firstAttribute="trailing" secondItem="DEV-52-7gS" secondAttribute="trailing" constant="21" id="gH0-PR-6PM"/>
+                            <constraint firstItem="mhN-5O-Zmm" firstAttribute="centerX" secondItem="bVC-9h-5Bu" secondAttribute="centerX" id="hhc-HU-l1v"/>
+                            <constraint firstItem="DEV-52-7gS" firstAttribute="top" secondItem="mhN-5O-Zmm" secondAttribute="bottom" constant="62" id="wZ5-1R-l9e"/>
                             <constraint firstItem="IV9-zr-acw" firstAttribute="leading" secondItem="bVC-9h-5Bu" secondAttribute="leading" id="yZj-Mj-qGd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="카테고리" image="CategoryIconImage" id="m4q-Uy-zH6"/>
+                    <connections>
+                        <outlet property="searchButton" destination="Sdb-zB-Vl2" id="WOk-DR-sNw"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CEp-Jc-Z2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-417" y="673"/>
         </scene>
