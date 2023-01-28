@@ -15,6 +15,7 @@ class UserDefaultsManager {
     private let USER_NAME = "userName"
     private let TAG_List = "tagList"
     private let USER_GOAL = "userGoal"
+    private let USER_BEGIN_DATE = "userBeginDate"
     
     func getUserName() -> String {
         return UserDefaults.standard.string(forKey: USER_NAME)!
@@ -38,5 +39,20 @@ class UserDefaultsManager {
     
     func setUserGoal(goal: String) {
         UserDefaults.standard.set(goal, forKey: USER_GOAL)
+    }
+    
+    func getBeginDate() -> Date {
+        return UserDefaults.standard.object(forKey: USER_BEGIN_DATE) as! Date
+    }
+    
+    func setBeginDate(beginDate: Date) {
+        UserDefaults.standard.set(beginDate, forKey: USER_BEGIN_DATE)
+    }
+    
+    func signUp(user: User) {
+        UserDefaultsManager.shared.setUserName(name: user.name)
+        UserDefaultsManager.shared.setUserTagList(tagList: user.tagList)
+        UserDefaultsManager.shared.setUserGoal(goal: user.goal)
+        UserDefaultsManager.shared.setBeginDate(beginDate: user.beginDay)
     }
 }
