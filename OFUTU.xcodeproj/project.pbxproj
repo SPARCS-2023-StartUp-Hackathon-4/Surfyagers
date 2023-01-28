@@ -14,6 +14,11 @@
 		F00A9CA42983F01D005EA650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA22983F01D005EA650 /* Main.storyboard */; };
 		F00A9CA62983F01E005EA650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA52983F01E005EA650 /* Assets.xcassets */; };
 		F00A9CA92983F01E005EA650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00A9CA72983F01E005EA650 /* LaunchScreen.storyboard */; };
+		F0576A71298460E6005133C9 /* SecondIntroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A70298460E6005133C9 /* SecondIntroVM.swift */; };
+		F0576A7329846187005133C9 /* SecondIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A7229846187005133C9 /* SecondIntroVC.swift */; };
+		F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A74298462DC005133C9 /* ThirdIntroVC.swift */; };
+		F0576A77298462F8005133C9 /* ThirdIntroVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A76298462F8005133C9 /* ThirdIntroVM.swift */; };
+		F0576A792984675D005133C9 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0576A782984675D005133C9 /* WebVC.swift */; };
 		F0E663CB298421AA001F564D /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C2298421A9001F564D /* Pretendard-Black.otf */; };
 		F0E663CC298421AA001F564D /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C3298421A9001F564D /* Pretendard-Light.otf */; };
 		F0E663CD298421AA001F564D /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0E663C4298421A9001F564D /* Pretendard-Medium.otf */; };
@@ -37,7 +42,6 @@
 		F0E663ED29843D82001F564D /* EditorMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EC29843D82001F564D /* EditorMode.swift */; };
 		F0E663EF29843E6F001F564D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663EE29843E6F001F564D /* MainTabBarController.swift */; };
 		F0E663F129843F04001F564D /* HomeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F029843F04001F564D /* HomeManager.swift */; };
-		F0E663F329843F88001F564D /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F229843F88001F564D /* WebVC.swift */; };
 		F0E663F62984473E001F564D /* SubCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F42984473E001F564D /* SubCategoryCell.swift */; };
 		F0E663F72984473E001F564D /* SubCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E663F52984473E001F564D /* SubCategoryCell.xib */; };
 		F0E663F929844D89001F564D /* FirstIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E663F829844D89001F564D /* FirstIntroVC.swift */; };
@@ -56,6 +60,12 @@
 		F00A9CA52983F01E005EA650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00A9CA82983F01E005EA650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F00A9CAA2983F01E005EA650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0576A70298460E6005133C9 /* SecondIntroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVM.swift; sourceTree = "<group>"; };
+		F0576A7229846187005133C9 /* SecondIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroVC.swift; sourceTree = "<group>"; };
+		F0576A74298462DC005133C9 /* ThirdIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVC.swift; sourceTree = "<group>"; };
+		F0576A76298462F8005133C9 /* ThirdIntroVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdIntroVM.swift; sourceTree = "<group>"; };
+		F0576A782984675D005133C9 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		F09254B22984B08D009B095E /* OFUTU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OFUTU.entitlements; sourceTree = "<group>"; };
 		F0E663C2298421A9001F564D /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		F0E663C3298421A9001F564D /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		F0E663C4298421A9001F564D /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
@@ -79,7 +89,6 @@
 		F0E663EC29843D82001F564D /* EditorMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMode.swift; sourceTree = "<group>"; };
 		F0E663EE29843E6F001F564D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		F0E663F029843F04001F564D /* HomeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeManager.swift; sourceTree = "<group>"; };
-		F0E663F229843F88001F564D /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		F0E663F42984473E001F564D /* SubCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryCell.swift; sourceTree = "<group>"; };
 		F0E663F52984473E001F564D /* SubCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryCell.xib; sourceTree = "<group>"; };
 		F0E663F829844D89001F564D /* FirstIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstIntroVC.swift; sourceTree = "<group>"; };
@@ -136,6 +145,7 @@
 		F00A9C9B2983F01D005EA650 /* OFUTU */ = {
 			isa = PBXGroup;
 			children = (
+				F09254B22984B08D009B095E /* OFUTU.entitlements */,
 				F00A9C9C2983F01D005EA650 /* AppDelegate.swift */,
 				F00A9C9E2983F01D005EA650 /* SceneDelegate.swift */,
 				F0E663C029841F7E001F564D /* Models */,
@@ -208,8 +218,10 @@
 				F0E663DC298433B9001F564D /* LocalVC.swift */,
 				F0E663DE29843493001F564D /* MyPageVC.swift */,
 				F0E663EE29843E6F001F564D /* MainTabBarController.swift */,
-				F0E663F229843F88001F564D /* WebVC.swift */,
 				F0E663F829844D89001F564D /* FirstIntroVC.swift */,
+				F0576A7229846187005133C9 /* SecondIntroVC.swift */,
+				F0576A74298462DC005133C9 /* ThirdIntroVC.swift */,
+				F0576A782984675D005133C9 /* WebVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -227,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				F0E663FA29844DA9001F564D /* FirstIntroVM.swift */,
+				F0576A70298460E6005133C9 /* SecondIntroVM.swift */,
+				F0576A76298462F8005133C9 /* ThirdIntroVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -369,18 +383,22 @@
 				F0E663DD298433B9001F564D /* LocalVC.swift in Sources */,
 				F0E663DB29843291001F564D /* CategoryVC.swift in Sources */,
 				F0E663F129843F04001F564D /* HomeManager.swift in Sources */,
+				F0576A7329846187005133C9 /* SecondIntroVC.swift in Sources */,
 				F00A9CA12983F01D005EA650 /* MainVC.swift in Sources */,
+				F0576A792984675D005133C9 /* WebVC.swift in Sources */,
 				F0E663D929842940001F564D /* ImageManager.swift in Sources */,
+				F0576A71298460E6005133C9 /* SecondIntroVM.swift in Sources */,
 				F0E663E929843C98001F564D /* MainCategory.swift in Sources */,
 				F0E663E529843B0B001F564D /* NetworkManager.swift in Sources */,
 				F0E663E129843867001F564D /* FontManager.swift in Sources */,
 				F0E663F929844D89001F564D /* FirstIntroVC.swift in Sources */,
-				F0E663F329843F88001F564D /* WebVC.swift in Sources */,
+				F0576A75298462DC005133C9 /* ThirdIntroVC.swift in Sources */,
 				F00A9C9D2983F01D005EA650 /* AppDelegate.swift in Sources */,
 				F0E663FB29844DA9001F564D /* FirstIntroVM.swift in Sources */,
 				F0E663DF29843493001F564D /* MyPageVC.swift in Sources */,
 				F0E663EF29843E6F001F564D /* MainTabBarController.swift in Sources */,
 				F0E663E729843B4A001F564D /* User.swift in Sources */,
+				F0576A77298462F8005133C9 /* ThirdIntroVM.swift in Sources */,
 				F0E663ED29843D82001F564D /* EditorMode.swift in Sources */,
 				F00A9C9F2983F01D005EA650 /* SceneDelegate.swift in Sources */,
 				F0E663D5298424D3001F564D /* ColorManager.swift in Sources */,
@@ -530,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OFUTU/OFUTU.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZDUPRML6B6;
@@ -563,6 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OFUTU/OFUTU.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZDUPRML6B6;
