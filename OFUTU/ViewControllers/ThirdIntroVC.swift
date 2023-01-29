@@ -39,7 +39,7 @@ class ThirdIntroVC: UIViewController {
     let BUTTON_CORNER_RADIUS: CGFloat = 5
     let STACK_VIEW_TOP_CONSTRAINT: CGFloat = 49
     let ACTIVE_HINT: String = "OFUTU와 가치 소비하러 같이 떠나요 :)"
-    let INACTIVE_HINT: String = "문장은 4~13글자 여야 합니다. :("
+    let INACTIVE_HINT: String = "문장은 4~15글자 여야 합니다. :("
     
     // RxSwift
     let disposeBag = DisposeBag()
