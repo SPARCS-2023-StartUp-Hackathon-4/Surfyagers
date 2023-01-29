@@ -30,7 +30,7 @@ const FeedPage = () => {
   };
   return (
     <div>
-      <div className="fixed flex pt-[54px] pb-[24px] w-full bg-white">
+      <div className="fixed flex pt-[200px] translate-y-[-150px] pb-[24px] w-full bg-white">
         <button className="translate-x-[24px] flex-1" onClick={onBack}>
           <img src="/images/arrow.left.svg" alt="" />
         </button>
@@ -49,7 +49,7 @@ const FeedPage = () => {
       <div className="px-[24px]">
         <Feed />
       </div>
-      <div className="h-[105px]"></div>
+      <div className="h-[85px]"></div>
       <div className="fixed bottom-0 pb-[37px] bg-[#fff] w-screen flex  justify-between pt-[13px] border-t-[0.5px] border-[#DCDCDC]">
         <div className="ml-[24px]">
           <div className="text-[14px] font-semibold">{data.product_name}</div>

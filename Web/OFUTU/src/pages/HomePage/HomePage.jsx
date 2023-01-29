@@ -6,23 +6,29 @@ import "swiper/css";
 const HomePage = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
+  const goTagSuggest = () => {
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("/tagSuggest");
+    } catch (error) {
+      alert(error);
+    }
+  };
+
   return (
     <div>
       <TopNavBar
         selectedIndex={selectedIndex}
         setSelectedIndex={setSelectedIndex}
+        from="main"
       />
       <Swiper>
         <SwiperSlide>
           <img src="/images/main_scroll_1.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/images/main_scroll_2.png" alt="" />
+          <img onClick={goTagSuggest} src="/images/main_scroll_2.png" alt="" />
         </SwiperSlide>
       </Swiper>
-      <div className="w-screen">
-        <img className="w-screen" src="/images/main_scroll_.png" alt="" />
-      </div>
       <img className="w-screen" src="/images/main_search.png" alt="" />
       <div className="w-[100vw] overflow-auto scrollbar-hide">
         <img

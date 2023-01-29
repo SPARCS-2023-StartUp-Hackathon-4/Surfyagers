@@ -3,7 +3,19 @@ import lottie from "lottie-web";
 import checkAnimationData from "../../assets/black_check.json";
 
 const SuggestDoneFullPage = () => {
-  const goBackMain = () => {};
+  const goBackMain = () => {
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("back");
+    } catch (error) {
+      alert(error);
+    }
+  };
+
+  let isDone = false;
+  const done = () => {
+    if (!isDone) document.querySelectorAll("svg")[0].remove();
+    isDone = true;
+  };
 
   useEffect(() => {
     const check = document.querySelector("#check");
@@ -14,7 +26,8 @@ const SuggestDoneFullPage = () => {
       autoplay: true,
       animationData: checkAnimationData,
     });
-  });
+    done();
+  }, []);
 
   return (
     <div className="h-screen w-screen flex flex-col justify-between">
@@ -32,7 +45,10 @@ const SuggestDoneFullPage = () => {
           <div>제안해주신 valueTag를 OFUTU가</div>
           <div>검토한 후 선정되면 알림 드릴게요!</div>
         </div>
-        <button className="bg-[#000] text-[#fff] mt-[42px] py-[13px] px-[37px] rounded-[5px]">
+        <button
+          className="bg-[#000] text-[#fff] mt-[42px] py-[13px] px-[37px] rounded-[5px]"
+          onClick={goBackMain}
+        >
           메인으로 돌아가기
         </button>
       </div>

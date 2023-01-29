@@ -120,7 +120,13 @@ const Comunity = ({ tag }) => {
     },
   ];
   const goComunityDetail = (index) => {
-    location.href = "/comunityDetail/" + index + 1;
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage(
+        "/comunityDetail/" + (+index + 1)
+      );
+    } catch (error) {
+      alert(error);
+    }
   };
   return (
     <div>
@@ -128,7 +134,7 @@ const Comunity = ({ tag }) => {
         return (
           <div
             onClick={() => {
-              goComunityDetail(index);
+              goComunityDetail(+index);
             }}
           >
             <ComunityCell data={data} />
