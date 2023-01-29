@@ -39,7 +39,7 @@ class ThirdIntroVM {
     }
     
     private func validateGoal(goal: String) -> Bool {
-        if goal.count >= 4 && goal.count <= 13 {
+        if goal.count >= 4 && goal.count <= 15 {
             return true
         }
         return false
