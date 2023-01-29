@@ -3,7 +3,11 @@ import TextBox from "../../element/TextBox/TextBox";
 
 const ComunityDetailPage = () => {
   const onBack = () => {
-    history.back();
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("back");
+    } catch (error) {
+      alert(error);
+    }
   };
 
   const { id } = useParams();
