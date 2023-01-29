@@ -119,10 +119,21 @@ const Comunity = ({ tag }) => {
       ],
     },
   ];
+  const goComunityDetail = (index) => {
+    location.href = "/comunityDetail/" + index + 1;
+  };
   return (
     <div>
-      {datas.map((data) => {
-        return <ComunityCell data={data} />;
+      {datas.map((data, index) => {
+        return (
+          <div
+            onClick={() => {
+              goComunityDetail(index);
+            }}
+          >
+            <ComunityCell data={data} />
+          </div>
+        );
       })}
     </div>
   );
