@@ -34,6 +34,9 @@ class FirstIntroVC: UIViewController {
     // RxSwift
     let disposeBag = DisposeBag()
     
+    // Variables
+    var passedName: String?
+    
     // Constants
     let TEXT_FIELD_FONT_SIZE: CGFloat = 24
     let BUTTON_FONT_SIZE: CGFloat = 16.39
@@ -49,6 +52,8 @@ class FirstIntroVC: UIViewController {
         super.viewDidLoad()
         initUI()
         action()
+        bind()
+        configureEditMode()
     }
     
     private func initUI() {
@@ -74,6 +79,14 @@ class FirstIntroVC: UIViewController {
         nextButton.rx.tap
             .subscribe(onNext: { _ in
                 // TODO: SecondIntro 화면으로 이동하는 코드 추가 하기
+                let secondIntroVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondIntroVC") as! SecondIntroVC
+                
+                secondIntroVC.viewModel.editorMode = .new
+                secondIntroVC.viewModel.name = self.nameTextField.text
+                secondIntroVC.modalTransitionStyle = .crossDissolve
+                secondIntroVC.modalPresentationStyle = .overFullScreen
+                
+                self.present(secondIntroVC, animated: true)
             })
             .disposed(by: disposeBag)
         
@@ -115,6 +128,13 @@ class FirstIntroVC: UIViewController {
         nextButton.setTitleColor(.white, for: .normal)
         nextButton.isEnabled = viewModel.isEnabled
         nextButton.backgroundColor = nextButton.isEnabled ? .black : ColorManager.shared.getLightSilver()
+    }
+    
+    private func configureEditMode() {
+        if viewModel.editorMode == .edit {
+            guard let name = passedName else { return }
+            viewModel.input.nickname.onNext(name)
+        }
     }
     
     // 유저가 화면을 터치했을 때 호출되는 메서드

@@ -21,7 +21,7 @@ class MainVC: UIViewController {
     let focusView = UnderlineFocusView()
     
     // Variables
-    var dataSource = [(menuTitle: MainCategory.main.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .main, selectedSubCategory: .home)), (menuTitle: MainCategory.community.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .community, selectedSubCategory: .home))]
+    var dataSource = [(menuTitle: MainCategory.main.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .main)), (menuTitle: MainCategory.community.rawValue, vc: HomeManager.shared.getViewController(selectedMainCategory: .community))]
     var subCategoryList: [SubCategory] = [.home, .zeroWaste, .fairTrade, .ecoFriendly, .vegun, .donation, .etc]
     var selectedSubCategory: SubCategory = .home
     lazy var firstLoad: (() -> Void)? = { [weak self, menuViewController, contentViewController] in
@@ -39,6 +39,27 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        firstLoad?()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? PagingMenuViewController {
+            menuViewController = vc
+            menuViewController.dataSource = self
+            menuViewController.delegate = self
+        } else if let vc = segue.destination as? PagingContentViewController  {
+            contentViewController = vc
+            contentViewController?.dataSource = self
+            contentViewController?.delegate = self
+        }
     }
     
     private func initUI() {
@@ -99,9 +120,9 @@ extension MainVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedSubCategory = subCategoryList[indexPath.row]
         
-        dataSource[0].1 = HomeManager.shared.getViewController(selectedMainCategory: .main, selectedSubCategory: selectedSubCategory)
+        dataSource[0].1 = HomeManager.shared.getViewController(selectedMainCategory: .main)
         
-        dataSource[1].1 = HomeManager.shared.getViewController(selectedMainCategory: .community, selectedSubCategory: selectedSubCategory)
+        dataSource[1].1 = HomeManager.shared.getViewController(selectedMainCategory: .community)
         
         menuViewController.reloadData()
         contentViewController.reloadData()

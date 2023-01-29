@@ -12,32 +12,14 @@ class HomeManager {
     
     private init() {}
     
-    func getViewController(selectedMainCategory: MainCategory, selectedSubCategory: SubCategory) -> WebVC {
+    func getViewController(selectedMainCategory: MainCategory) -> WebVC {
         let webVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebVC") as! WebVC
-        
-        var subCategory = ""
-        switch selectedSubCategory {
-        case .home:
-            subCategory = "home"
-        case .zeroWaste:
-            subCategory = "zeroWaste"
-        case .fairTrade:
-            subCategory = "fairTrade"
-        case .ecoFriendly:
-            subCategory = "ecoFriendly"
-        case .vegun:
-            subCategory = "vegun"
-        case .donation:
-            subCategory = "donation"
-        case .etc:
-            subCategory = "etc"
-        }
         
         // MARK: - 실제 서버 Url로 변경 (테스트 Url)
         if selectedMainCategory == .main {
-            webVC.requestUrl = "https://search.naver.com/search.naver?query=\(subCategory)"
+            webVC.requestUrl = "https://search.naver.com/"
         } else {
-            let url = "https://search.daum.net/search?w=tot&q=\(subCategory)"
+            let url = "https://search.daum.net/"
             webVC.requestUrl = url
         }
         
