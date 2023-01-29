@@ -17,9 +17,9 @@ class HomeManager {
         
         // MARK: - 실제 서버 Url로 변경 (테스트 Url)
         if selectedMainCategory == .main {
-            webVC.requestUrl = "https://search.naver.com/"
+            webVC.requestUrl = "http://loopy-lim.com:5173/home"
         } else {
-            let url = "https://search.daum.net/"
+            let url = "http://loopy-lim.com:5173/comunity/home"
             webVC.requestUrl = url
         }
         
