@@ -17,9 +17,11 @@ class WebViewManager {
         let webConfiguration = WKWebViewConfiguration()
         webConfiguration.allowsPictureInPictureMediaPlayback = true
         webConfiguration.preferences.javaScriptEnabled = true
+        let contentController = WKUserContentController()
+        contentController.add(viewcontroller as! WKScriptMessageHandler, name: "scriptHandler")
+        webConfiguration.userContentController = contentController
         let url = URL(string: urlString)
         let request = URLRequest(url: url!)
-        let contentController = WKUserContentController()
         webConfiguration.userContentController = contentController
         
         let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), configuration: webConfiguration)
@@ -27,18 +29,19 @@ class WebViewManager {
         webView.load(request)
     }
     
-    func getFullWebView(view: UIView, viewcontroller: UIViewController, urlString: String) {
+    func getFullWebView(viewcontroller: UIViewController, urlString: String) {
         let webConfiguration = WKWebViewConfiguration()
         webConfiguration.allowsInlineMediaPlayback = true
         webConfiguration.mediaTypesRequiringUserActionForPlayback = []
         webConfiguration.preferences.javaScriptEnabled = true
+        let contentController = WKUserContentController()
+        contentController.add(viewcontroller as! WKScriptMessageHandler, name: "fullScriptHandler")
+        webConfiguration.userContentController = contentController
         let url = URL(string: urlString)
         let request = URLRequest(url: url!)
         let fullWebViewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullWebViewVC") as! FullWebViewVC
         let fullWebViewParrent = fullWebViewVC.view
-        
-        let contentController = WKUserContentController()
-        contentController.add(fullWebViewVC as! WKScriptMessageHandler, name: "scriptHandler")
+        contentController.add(fullWebViewVC as WKScriptMessageHandler, name: "scriptHandler")
         webConfiguration.userContentController = contentController
         
         let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: fullWebViewParrent!.bounds.width, height: fullWebViewParrent!.bounds.height), configuration: webConfiguration)

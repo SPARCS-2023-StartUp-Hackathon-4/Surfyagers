@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class WebVC: UIViewController {
     // UIView
@@ -14,11 +15,20 @@ class WebVC: UIViewController {
     // String
     var requestUrl: String!
     
+    var userContentController = WKUserContentController.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         WebViewManager.shared.getWebView(view: webView, viewcontroller: self, urlString: requestUrl)
     }
 }
 
-
-
+extension WebVC: WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if let body = message.body as? String {
+            let webViewManager = WebViewManager.shared
+            webViewManager.getFullWebView( viewcontroller: self, urlString: "http://loopy-lim.com:5173"+body)
+        }
+    
+    }
+}

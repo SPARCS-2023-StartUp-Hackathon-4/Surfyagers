@@ -171,7 +171,6 @@ extension MainVC: PagingContentViewControllerDataSource, PagingContentViewContro
     }
     
     func contentViewController(viewController: PagingContentViewController, didManualScrollOn index: Int, percent: CGFloat) {
-        
         menuViewController.scroll(index: index, percent: percent, animated: false)
         adjustfocusViewWidth(index: index, percent: percent)
     }
