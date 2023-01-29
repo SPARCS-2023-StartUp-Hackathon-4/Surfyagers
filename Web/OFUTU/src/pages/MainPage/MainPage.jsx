@@ -34,6 +34,7 @@ const MainPage = () => {
         <div className="h-[calc(100%-200px)] flex items-center justify-center">
           <img src="/images/repair.png" alt="" />
         </div>
+        <div className="h-[220px]"></div>
       </div>
     );
 
@@ -82,6 +83,7 @@ const MainPage = () => {
         </div>
       </div>
       <ProductList tag={tag} />
+      <div className="h-[220px]"></div>
     </div>
   );
 };

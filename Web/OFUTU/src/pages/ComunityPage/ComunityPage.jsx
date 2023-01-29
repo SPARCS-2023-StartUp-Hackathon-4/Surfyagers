@@ -43,6 +43,7 @@ const ComunityPage = () => {
         from="comunity"
       />
       <Comunity tag={tag} />
+      <div className="h-[220px]"></div>
     </div>
   );
 };

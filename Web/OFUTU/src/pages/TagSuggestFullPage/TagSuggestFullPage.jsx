@@ -12,7 +12,11 @@ const TagSuggestFullPage = () => {
   };
 
   const onBack = () => {
-    alert("back");
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("back");
+    } catch (error) {
+      alert(error);
+    }
   };
 
   useEffect(() => {
@@ -20,7 +24,7 @@ const TagSuggestFullPage = () => {
   }, [valueTagText]);
 
   return (
-    <div className="h-screen w-screen flex flex-col justify-between">
+    <div className="h-[90vh] w-screen flex flex-col justify-between">
       <div>
         <div>
           <button
@@ -48,7 +52,7 @@ const TagSuggestFullPage = () => {
           </div>
         </div>
       </div>
-      <div className="px-[24px] mb-[49px]">
+      <div className="px-[24px]">
         <button
           className="w-full text-[#fff] py-[17px] rounded-[5px]"
           style={{

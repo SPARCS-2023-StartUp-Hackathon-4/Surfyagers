@@ -5,12 +5,16 @@ const ProductDetailPage = () => {
   const { id } = useParams();
 
   const onBack = () => {
-    alert("back");
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("back");
+    } catch (error) {
+      alert(error);
+    }
   };
 
   return (
     <div>
-      <div className="fixed w-full bg-white">
+      <div className="fixed w-full bg-white pt-[100px] translate-y-[-120px]">
         <div className="flex justify-between items-center">
           <button
             className="translate-x-[24px] translate-y-[12px] flex-1"

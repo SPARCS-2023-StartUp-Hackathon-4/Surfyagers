@@ -43,10 +43,22 @@ const ProductList = ({ tag }) => {
       </div>
     );
 
+  const goProductList = () => {
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("/product/1");
+    } catch (error) {
+      alert(error);
+    }
+  };
+
   return (
     <div className="grid grid-cols-2 p-[19px] pt-[37px]">
       {data.map((product) => {
-        return <ProductComponent productData={product} />;
+        return (
+          <div onClick={goProductList}>
+            <ProductComponent productData={product} />
+          </div>
+        );
       })}
     </div>
   );

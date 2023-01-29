@@ -44,7 +44,7 @@ const FeedDetailPage = () => {
 
   return (
     <div>
-      <div className="fixed flex pt-[54px] pb-[24px] w-full bg-white">
+      <div className="fixed flex pt-[154px] translate-y-[-100px] pb-[24px] w-full bg-white">
         <button className="translate-x-[24px] flex-1" onClick={onBack}>
           <img src="/images/arrow.left.svg" alt="" />
         </button>
@@ -128,6 +128,7 @@ const FeedDetailPage = () => {
           </div>
         </div>
       </div>
+      <div className="h-[100px]"></div>
     </div>
   );
 };
